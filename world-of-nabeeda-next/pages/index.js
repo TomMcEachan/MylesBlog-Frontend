@@ -1,9 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import axios from "axios";
 
-
-export default function Home() {
+export default function Home({posts}) {
   return (
-    <>Home</>
+    <>
+       <h1>{posts[0].title}</h1>
+    </>
   )
+}
+
+export async function getStaticProps() {
+  
+  const postsRes = await axios.get("http://localhost:8005/posts");
+
+
+  return {
+    props: {
+      posts: postsRes.data,
+    }
+  }
 }
