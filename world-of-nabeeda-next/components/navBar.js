@@ -3,9 +3,10 @@ import Link from 'next/link';
 
 export default function NavBar() {
     return (
-       <nav>
+       <nav className="navBar">
+           <div className="container">
            <Link href="/">
-                <a>World of Nabeeda</a>
+                <a className="title">World of Nabeeda</a>
            </Link>
 
            <ul>
@@ -15,6 +16,7 @@ export default function NavBar() {
                    </Link>
                </li>
            </ul>
+           </div>
        </nav>
     )
 }

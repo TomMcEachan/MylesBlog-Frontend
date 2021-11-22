@@ -1,9 +1,10 @@
 import axios from "axios";
+import HomeHeader from "../components/HomeHeader";
 
 export default function Home({posts}) {
   return (
     <>
-       <h1>{posts[0].title}</h1>
+      <HomeHeader />  
     </>
   )
 }
