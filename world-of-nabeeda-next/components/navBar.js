@@ -11,8 +11,28 @@ export default function NavBar() {
 
            <ul>
                <li>
-                   <Link href="/posts">
-                        <a>All Posts</a>
+                   <Link href="/blog/causes">
+                        <a>Causes</a>
+                   </Link>
+               </li>
+               <li>
+                   <Link href="/blog/lifestyle">
+                        <a>Lifestyle</a>
+                   </Link>
+               </li>
+               <li>
+                   <Link href="/blog/career">
+                        <a>Career</a>
+                   </Link>
+               </li>
+               <li>
+                   <Link href="/blog/education">
+                        <a>Education</a>
+                   </Link>
+               </li>
+               <li>
+                   <Link href="/blog/all">
+                        <a>Education</a>
                    </Link>
                </li>
            </ul>
