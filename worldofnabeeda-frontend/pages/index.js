@@ -1,9 +1,12 @@
 import axios from 'axios';
+import HomeHeader from '../components/HomeHeader/HomeHeader';
+import HomeLatestPosts from '../components/HomeLatestPosts/HomeLatestPosts';
 
 export default function Home({posts}) {
   return (
     <>
-    <h1>{posts[0].title}</h1>
+      <HomeHeader />
+      <HomeLatestPosts posts={posts}/>
     </>
   )
 }

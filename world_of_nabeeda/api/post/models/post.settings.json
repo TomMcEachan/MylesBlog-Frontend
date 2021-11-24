@@ -43,7 +43,8 @@
         "travel",
         "causes",
         "career",
-        "education"
+        "education",
+        "me"
       ],
       "required": true
     }
