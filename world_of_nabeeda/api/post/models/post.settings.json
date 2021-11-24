@@ -36,17 +36,12 @@
     "published": {
       "type": "date"
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "lifestyle",
-        "travel",
-        "causes",
-        "career",
-        "education",
-        "me"
-      ],
-      "required": true
+    "featured": {
+      "type": "boolean"
+    },
+    "categories": {
+      "via": "posts",
+      "collection": "category"
     }
   }
 }

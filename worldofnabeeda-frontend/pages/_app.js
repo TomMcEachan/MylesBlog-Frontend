@@ -6,10 +6,10 @@ import '../styles/index.scss';
 
 
 //Returns the App to the Browser
-export default function MyApp({ Component, pageProps, posts }) {
+export default function MyApp({ Component, pageProps, posts}) {
   return (
   <div className="app">
-    <TopBar posts={posts}/>
+    <TopBar  />
     <NavBar />
       <div className="container">
       <Component {...pageProps} />
@@ -18,16 +18,4 @@ export default function MyApp({ Component, pageProps, posts }) {
   )
 }
 
-
-
-//Returns the posts from Strappi CMS
-export async function getStaticProps() {
-
-  const postsRes = await axios.get("http://localhost:8005/posts")
-  return {
-    props: {
-      posts: postsRes.data
-    }
-  }
-
-} 
+ 

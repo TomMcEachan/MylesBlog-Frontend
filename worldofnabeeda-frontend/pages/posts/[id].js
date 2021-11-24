@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import MarkdownIt from 'markdown-it';
+import Image from 'next/image';
 
 export default function PostPage({post}) {
 

@@ -27,6 +27,9 @@ export default function NavBar() {
                         <Link href="/">
                             <a className="menuLink">Education</a>
                         </Link>
+                        <Link href="/">
+                            <a className="menuLink">Ask Nabeeda</a>
+                        </Link>
                         <Link href="/posts">
                             <a className="menuLink">All</a>
                         </Link>

@@ -6,7 +6,7 @@ export default function Home({posts}) {
   return (
     <>
       <HomeHeader />
-      <HomeLatestPosts posts={posts}/>
+      <HomeLatestPosts data={posts}/>
     </>
   )
 }
@@ -22,3 +22,5 @@ export async function getStaticProps() {
     }
   }
 } 
+
+

@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import PostPreview from '../PostPreview/PostPreview';
+import PostPreviewFeatured from '../PostPreviewFeatured/PostPreviewFeatured.js';
 
 export default function AllPostLists({posts}) {
 
     function renderPostPreviews() {
         return posts.map((post) => {
-            return <PostPreview post={post} key={post.id} />;
+            return <PostPreviewFeatured post={post} key={post.id} />;
         });
 
     }
