@@ -7,38 +7,28 @@ export default function NavBar() {
         <nav className="navBar">
             <div className="container">
                 <Link href="/">
-                <a className="title">World of Nabeeda</a>
+                <img className="logo" src="https://res.cloudinary.com/tommceachan/image/upload/v1637766266/WorldOfNabeeda/Logo-Transparent01_tnf7ov.png"/>
                 </Link>
                 
                 <ul>
                     <li>
-                        <Link href="/">
-                            <a>Travel</a>
+                        <Link  href="/">
+                            <a className="menuLink">Travel</a>
                         </Link>
-                    </li>
-                    <li>
                         <Link href="/">
-                            <a>Lifestyle</a>
+                            <a className="menuLink">Lifestyle</a>
                         </Link>
-                    </li>
-                    <li>
                         <Link href="/">
-                            <a>Causes</a>
+                            <a className="menuLink">Causes</a>
                         </Link>
-                    </li>
-                    <li>
                         <Link href="/">
-                            <a>Careers</a>
+                            <a className="menuLink">Careers</a>
                         </Link>
-                    </li>
-                    <li>
                         <Link href="/">
-                            <a>Education</a>
+                            <a className="menuLink">Education</a>
                         </Link>
-                    </li>
-                    <li>
                         <Link href="/posts">
-                            <a>All</a>
+                            <a className="menuLink">All</a>
                         </Link>
                     </li>
                 </ul>

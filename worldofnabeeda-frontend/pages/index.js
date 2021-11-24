@@ -21,5 +21,4 @@ export async function getStaticProps() {
       posts: postsRes.data
     }
   }
-
 } 

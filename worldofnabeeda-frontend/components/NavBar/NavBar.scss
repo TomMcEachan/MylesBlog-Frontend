@@ -15,8 +15,28 @@
         list-style: none;
     }
 
+
     .title {
         font-size: 1.5em;
+    }
 
+    .menuLink{
+            color: black;
+            padding: 0 1em;
+            font-weight: bold;
+            
+            &:hover{
+                text-decoration: none;
+                color:#FBD3E5;
+            }
+    }
+
+    .logo{
+        width: 25%;
+        height: 25%;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 2ms;
+        
     }
 }
