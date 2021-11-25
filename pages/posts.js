@@ -15,7 +15,7 @@ export default function Posts({posts}) {
 
 export async function getStaticProps() {
 
-    const postsRes = await axios.get("http://localhost:8005/posts")
+    const postsRes = await axios.get("https://worldofnabeeda-strapi.herokuapp.com/posts")
   
     return {
       props: {
