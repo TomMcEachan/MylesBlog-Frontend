@@ -1,0 +1,49 @@
+.topBar{
+    
+    background-color: black;
+    .latestContainer{
+        justify-content: space-between;
+        display: flex;
+
+        p{
+            margin-left: 1em;
+            color: white;
+            font-size: small;
+        }
+
+        .latestBox{
+            background-color: pink;
+            padding: 0 1em;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .latestBoxPost {
+            transition: .5s;
+            &:hover{
+                color: #50D0E8;
+            }
+        }
+    }
+
+    ul{
+        margin: unset;
+        padding: unset;
+        list-style: none;
+    }
+
+    .socialContainer {
+        .socialLink {
+        color: #50D0E8;
+        margin: 0 .5em;
+        cursor: pointer;
+        }
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
