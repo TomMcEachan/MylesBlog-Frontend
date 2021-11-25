@@ -14,8 +14,8 @@ export default function Home({allPosts, featuredPosts}) {
 
 export async function getStaticProps() {
 
-  const allPostsRes = await axios.get("http://localhost:8005/posts")
-  const featuredPostRes = await axios.get("http://localhost:8005/posts?featured=true")
+  const allPostsRes = await axios.get("https://worldofnabeeda-strapi.herokuapp.com/posts")
+  const featuredPostRes = await axios.get("https://worldofnabeeda-strapi.herokuapp.com/posts?featured=true")
 
   return {
     props: {
