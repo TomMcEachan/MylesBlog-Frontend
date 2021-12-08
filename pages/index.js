@@ -1,7 +1,7 @@
 import axios from 'axios';
 import HomeHeader from '../components/HomeHeader/HomeHeader';
 import HomeLatestPosts from '../components/HomeLatestPosts/HomeLatestPosts';
-import HomeCategoryPosts from '../components/HomeCategoryPosts/HomeCategoryPosts';
+
 
 
 //This is what is displayed 
@@ -10,7 +10,6 @@ export default function Home({allPosts, featuredPosts, lifestylePosts, careerPos
     <>
       <HomeHeader />
       <HomeLatestPosts allPosts={allPosts} featuredPosts={featuredPosts}/>
-      <HomeCategoryPosts lifestylePosts={lifestylePosts} careerPosts={careerPosts} educationPosts={educationPosts} />
     </>
   )
 }
@@ -25,28 +24,18 @@ export async function getStaticProps() {
   //This queries the CMS for all the posts that have been marked as 'featured' in the CMS
   const featuredPostRes = await axios.get("/posts?featured=true")
 
-  //This queries the CMS for all the posts that are in the 'lifestyle' category
-  const lifestylePostsRes = await axios.get("/categories?name=lifestyle")
-  const lifestylePosts = lifestylePostsRes.data[0].posts;
-
-  //This queries the CMS for all the posts that are in the 'career' category
-  const careerPostsRes = await axios.get("/categories?name=careers")
-  const careerPosts = careerPostsRes.data[0].posts;
-
-   //This queries the CMS for all the posts that are in the 'education' category
-   const educationPostsRes = await axios.get("/categories?name=education")
-   const educationPosts = educationPostsRes.data[0].posts;
+ 
 
   //Returns data from api as a prop to be use in component
   return {
     props: {
       allPosts: allPostsRes.data,
       featuredPosts: featuredPostRes.data,
-      lifestylePosts: lifestylePosts,
-      careerPosts: careerPosts,
-      educationPosts: educationPosts
+     
     }
   }
 } 
+
+
 
 

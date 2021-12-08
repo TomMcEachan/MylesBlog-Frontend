@@ -9,7 +9,6 @@ export default function NavBar() {
                 <Link href="/">
                 <img className="logo" src="https://res.cloudinary.com/tommceachan/image/upload/v1637766266/WorldOfNabeeda/Logo-Transparent01_tnf7ov.png"/>
                 </Link>
-            
                 <ul>
                     <li>
                         <Link  href="/travel">
@@ -18,7 +17,7 @@ export default function NavBar() {
                         <Link href="/lifestyle">
                             <a className="menuLink">Lifestyle</a>
                         </Link>
-                        <Link href="causes">
+                        <Link href="/causes">
                             <a className="menuLink">Causes</a>
                         </Link>
                         <Link href="/careers">
@@ -26,9 +25,6 @@ export default function NavBar() {
                         </Link>
                         <Link href="/education">
                             <a className="menuLink">Education</a>
-                        </Link>
-                        <Link href="/askNabeeda">
-                            <a className="menuLink">Ask Nabeeda</a>
                         </Link>
                         <Link href="/all">
                             <a className="menuLink">All</a>
