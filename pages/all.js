@@ -2,24 +2,24 @@ import React from 'react'
 import AllPostLists from '../components/AllPostsList/AllPostLists'
 import axios from 'axios';
 
-export default function Posts({posts}) {
+export default function Posts({posts, title}) {
     return (
         <>
-            <AllPostLists posts= {posts}/>
+            <AllPostLists posts= {posts} listTitle={title}/>
         </>
 
     )
 }
 
 
-
 export async function getStaticProps() {
 
-    const postsRes = await axios.get("https://worldofnabeeda-strapi.herokuapp.com/posts")
+    const postsRes = await axios.get("/posts")
   
     return {
       props: {
-        posts: postsRes.data
+        posts: postsRes.data, 
+        title: "All Posts"
       }
     }
 }

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import PostPreview from '../PostPreview/PostPreview';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
-import Image from 'next/image';
+
 
 export default function HomeLatestPosts({allPosts, featuredPosts}) {
 

@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react'
 import PostPreview from '../PostPreview/PostPreview.js';
 
-export default function AllPostLists({posts}) {
+export default function AllPostLists({posts, listTitle}) {
 
     function renderPostPreviews() {
         return posts.map((post) => {
@@ -12,7 +11,7 @@ export default function AllPostLists({posts}) {
 
     return (
        <>
-       <h2>All Posts</h2>
+       <h2>{listTitle}</h2>
        {renderPostPreviews()}
        </>
     )
