@@ -12,7 +12,7 @@ export default function NavBar() {
                 
                 <ul>
                     <li>
-                        <Link  href="/">
+                        <Link  href="/travel">
                             <a className="menuLink">Travel</a>
                         </Link>
                         <Link href="/">

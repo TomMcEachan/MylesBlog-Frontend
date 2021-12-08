@@ -27,7 +27,6 @@ export default function HomeLatestPosts({lifestylePosts, careerPosts, educationP
         setEducationPosts(getEducationPosts.slice(0,2));
     }, [educationPosts]);
 
-
     //This function renders the PostPreview component with the data queries from the Strapi Database.
     function renderPostPreviews(type) {
         return type.map((post) => {

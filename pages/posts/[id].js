@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import MarkdownIt from 'markdown-it';
-import Image from 'next/image';
 
 export default function PostPage({post}) {
 
@@ -23,7 +22,7 @@ export default function PostPage({post}) {
 
 export async function getStaticProps({params}) {
 
-    const postRes = await axios.get(`http://localhost:8005/posts/${params.id}`)
+    const postRes = await axios.get(`https://worldofnabeeda-strapi.herokuapp.com/${params.id}`)
 
     return {
         props: {
@@ -35,7 +34,7 @@ export async function getStaticProps({params}) {
 
 export async function getStaticPaths(){
 
-const postsRes =  await axios.get("http://localhost:8005/posts")
+const postsRes =  await axios.get("https://worldofnabeeda-strapi.herokuapp.com/posts")
 
 const paths = postsRes.data.map((posts) => {
     return {params: {id: posts.id.toString()}}

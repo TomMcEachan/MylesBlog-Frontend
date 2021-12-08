@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react'
 import PostPreview from '../PostPreview/PostPreview.js';
 
 export default function AllPostLists({posts}) {

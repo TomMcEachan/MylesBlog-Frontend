@@ -4,6 +4,7 @@ import axios from 'axios';
 import '../styles/index.scss';
 
 
+axios.defaults.baseURL= "https://worldofnabeeda-strapi.herokuapp.com";
 
 //Returns the App to the Browser
 export default function MyApp({ Component, pageProps, posts}) {
