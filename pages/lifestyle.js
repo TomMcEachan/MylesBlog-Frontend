@@ -2,7 +2,7 @@ import axios from 'axios';
 import AllPostLists from '../components/AllPostsList/AllPostLists';
 
 
-export default function Travel ({posts, title}) {
+export default function Travel ({posts}) {
 
     return (
         <>
@@ -12,13 +12,13 @@ export default function Travel ({posts, title}) {
 }
 
 export async function getStaticProps() {
-    const response = await axios.get("/categories?name=travel");
-    const travelPosts = response.data[0].posts;
-  
+    const response = await axios.get("/categories?name=lifestyle");
+    const lifestylePosts = response.data[0].posts;
+    
     return {
       props: {
-        posts: travelPosts,
-        title: "Travel"
+        posts: lifestylePosts,
+        title: "Lifestyle"
       }
     }
 }

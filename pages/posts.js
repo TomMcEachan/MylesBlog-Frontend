@@ -5,7 +5,7 @@ import axios from 'axios';
 export default function Posts({posts}) {
     return (
         <>
-            <AllPostLists posts= {posts}/>
+            <AllPostLists posts= {posts} listTitle={title}/>
         </>
 
     )
@@ -19,7 +19,8 @@ export async function getStaticProps() {
   
     return {
       props: {
-        posts: postsRes.data
+        posts: postsRes, 
+        title: "All Posts"
       }
     }
 }
