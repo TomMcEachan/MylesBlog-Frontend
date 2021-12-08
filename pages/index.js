@@ -3,6 +3,8 @@ import HomeHeader from '../components/HomeHeader/HomeHeader';
 import HomeLatestPosts from '../components/HomeLatestPosts/HomeLatestPosts';
 import HomeCategoryPosts from '../components/HomeCategoryPosts/HomeCategoryPosts';
 
+
+//This is what is displayed 
 export default function Home({allPosts, featuredPosts, lifestylePosts, careerPosts, educationPosts}) {
   return (
     <>
@@ -21,7 +23,7 @@ export async function getStaticProps() {
   const allPostsRes = await axios.get("/posts")
 
   //This queries the CMS for all the posts that have been marked as 'featured' in the CMS
-  const featuredPostRes = await axios.get("https://worldofnabeeda-strapi.herokuapp.com/posts?featured=true")
+  const featuredPostRes = await axios.get("/posts?featured=true")
 
   //This queries the CMS for all the posts that are in the 'lifestyle' category
   const lifestylePostsRes = await axios.get("/posts")
