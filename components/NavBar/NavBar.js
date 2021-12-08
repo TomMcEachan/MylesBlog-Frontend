@@ -18,19 +18,19 @@ export default function NavBar() {
                         <Link href="/lifestyle">
                             <a className="menuLink">Lifestyle</a>
                         </Link>
-                        <Link href="/">
+                        <Link href="causes">
                             <a className="menuLink">Causes</a>
                         </Link>
-                        <Link href="/">
+                        <Link href="/careers">
                             <a className="menuLink">Careers</a>
                         </Link>
-                        <Link href="/">
+                        <Link href="/education">
                             <a className="menuLink">Education</a>
                         </Link>
-                        <Link href="/">
+                        <Link href="/askNabeeda">
                             <a className="menuLink">Ask Nabeeda</a>
                         </Link>
-                        <Link href="/posts">
+                        <Link href="/all">
                             <a className="menuLink">All</a>
                         </Link>
                     </li>

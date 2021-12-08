@@ -12,13 +12,13 @@ export default function Travel ({posts, title}) {
 }
 
 export async function getStaticProps() {
-    const response = await axios.get("/categories?name=lifestyle");
-    const lifestylePosts = response.data[0].posts;
-    
+    const response = await axios.get("/categories?name=careers");
+    const careerPosts = response.data[0].posts;
+  
     return {
       props: {
-        posts: lifestylePosts,
-        title: "Lifestyle"
+        posts: careerPosts,
+        title: "Careers"
       }
     }
 }
