@@ -1,11 +1,11 @@
 import React from 'react';
-//import axios from 'axios';
-//import MarkdownIt from 'markdown-it';
+import axios from 'axios';
+import MarkdownIt from 'markdown-it';
 
 export default function PostPage({post}) {
 
-    //const md = new MarkdownIt();
-    // const htmlContent = md.render(post.content);
+    const md = new MarkdownIt();
+    const htmlContent = md.render(post.content);
     
 
     return (
@@ -14,15 +14,15 @@ export default function PostPage({post}) {
                <h1>Test Title</h1>
                <h2>Test Description</h2>
            </header>
-         {/*  <section dangerouslySetInnerHTML={{__html: htmlContent}}></section> */}
+        <section dangerouslySetInnerHTML={{__html: htmlContent}}></section>
        </article>
     )
 }
 
 
-{/* export async function getStaticProps({params}) {
+ export async function getStaticProps({params}) {
 
-    const postRes = await axios.get(`https://worldofnabeeda-strapi.herokuapp.com/${params.id}`)
+    const postRes = await axios.get(`/posts/${params.id}`)
 
     return {
         props: {
@@ -34,7 +34,7 @@ export default function PostPage({post}) {
 
 export async function getStaticPaths(){
 
-const postsRes =  await axios.get("https://worldofnabeeda-strapi.herokuapp.com/posts")
+const postsRes =  await axios.get("/posts")
 
 const paths = postsRes.data.map((posts) => {
     return {params: {id: posts.id.toString()}}
@@ -46,4 +46,3 @@ const paths = postsRes.data.map((posts) => {
     });
 }
 
-*/}
