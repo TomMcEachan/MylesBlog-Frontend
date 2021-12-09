@@ -7,7 +7,7 @@ export default function NavBar() {
         <nav className="navBar">
             <div className="container">
                 <Link href="/" passHref>
-                <Image  alt="world of nabeeda logo" className="logo" width={250} height={150} src="https://res.cloudinary.com/tommceachan/image/upload/v1637775945/WorldOfNabeeda/Logo-Transparent-01_raa5wa.png"/>
+                <Image  alt="world of nabeeda logo" className="logo" width={250} height={150} src="https://res.cloudinary.com/tommceachan/image/upload/v1639073186/Logo_Transparent_01_25b1dcad52.png"/>
                 </Link>
                 <ul>
                     <li>

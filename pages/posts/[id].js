@@ -11,8 +11,9 @@ export default function PostPage({post}) {
     return (
        <article>
            <header>
-               <h1>Test Title</h1>
-               <h2>Test Description</h2>
+               <h1>{post.title}</h1>
+               <h2>{post.description}</h2>
+               <h3>{post.category}</h3>
            </header>
         <section dangerouslySetInnerHTML={{__html: htmlContent}}></section>
        </article>
