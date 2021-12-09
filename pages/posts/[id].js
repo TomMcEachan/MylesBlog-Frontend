@@ -32,7 +32,6 @@ export default function PostPage({post}) {
     }
 }
 
-
 export async function getStaticPaths(){
 
 const postsRes =  await axios.get("/posts")
