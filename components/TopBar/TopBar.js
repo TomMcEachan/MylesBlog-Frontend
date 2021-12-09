@@ -16,16 +16,16 @@ export default function TopBar() {
                 <div className="socialContainer">
                     <ul>
                         <li>
-                            <Link  href="https://twitter.com/worldofnabeeda" target="_blank">
+                            <Link  href="https://twitter.com/worldofnabeeda" target="_blank" passHref>
                             <BsTwitter className="socialLink" />
                             </Link>
-                            <Link href="https://www.facebook.com/worldofnabeeda">
+                            <Link href="https://www.facebook.com/worldofnabeeda" passHref>
                                 <BsFacebook className="socialLink" />
                             </Link>
-                            <Link  href="https://www.instagram.com/worldofnabeeda/?hl=en">
+                            <Link  href="https://www.instagram.com/worldofnabeeda/?hl=en" passHref>
                             <BsInstagram className="socialLink" />
                             </Link>
-                            <Link href="https://www.youtube.com/channel/UCWPYFsoJUNmbcqazVpQMW3w">
+                            <Link href="https://www.youtube.com/channel/UCWPYFsoJUNmbcqazVpQMW3w" passHref>
                                 <BsYoutube className="socialLink" />
                             </Link>
                         </li>

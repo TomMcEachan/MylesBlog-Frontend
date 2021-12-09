@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function NavBar() {
     return (
-        
         <nav className="navBar">
             <div className="container">
-                <Link href="/">
-                <img className="logo" src="https://res.cloudinary.com/tommceachan/image/upload/v1637766266/WorldOfNabeeda/Logo-Transparent01_tnf7ov.png"/>
+                <Link href="/" passHref>
+                <Image  alt="world of nabeeda logo" className="logo" width={250} height={150} src="https://res.cloudinary.com/tommceachan/image/upload/v1637775945/WorldOfNabeeda/Logo-Transparent-01_raa5wa.png"/>
                 </Link>
                 <ul>
                     <li>
