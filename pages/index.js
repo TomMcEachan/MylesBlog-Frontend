@@ -5,7 +5,7 @@ import HomeLatestPosts from '../components/HomeLatestPosts/HomeLatestPosts';
 
 
 //This is what is displayed 
-export default function Home({allPosts, featuredPosts, lifestylePosts, careerPosts, educationPosts}) {
+export default function Home({allPosts, featuredPosts}) {
   return (
     <>
       <HomeHeader />
@@ -23,9 +23,7 @@ export async function getStaticProps() {
 
   //This queries the CMS for all the posts that have been marked as 'featured' in the CMS
   const featuredPostRes = await axios.get("/posts?featured=true")
-
  
-
   //Returns data from api as a prop to be use in component
   return {
     props: {
