@@ -14,13 +14,13 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
     //Sets all posts and gets 4
     useEffect(() => {
        setAllPosts(getAllPosts.slice(0,5));
-    }, [allPosts]);
+    }, [allPosts, getAllPosts]);
 
 
     //Sets featured posts and gets 4
     useEffect(() => {
         setFeaturedPosts(getFeaturedPosts.slice(0,5));
-    }, [featuredPosts]);
+    }, [featuredPosts, getFeaturedPosts]);
 
 
     //This function renders the PostPreview component with the data queries from the Strapi Database.
