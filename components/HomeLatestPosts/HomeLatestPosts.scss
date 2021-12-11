@@ -10,28 +10,7 @@ height: 1px;
 opacity: 25%;
 }
 
-.mobileContainer{
-    display: none;
-}
 
-@media  screen and (max-width: 960px) {
-    
-    .desktopContainer{
-        display: none;
-    }
-
-    .mobileContainer{
-        display: flex;
-    }
-
-    .categoryTitle{
-        font-size: x-large;
-    }
-    
-    .separator{
-        opacity: 70%;
-    }
-}
 
 
 

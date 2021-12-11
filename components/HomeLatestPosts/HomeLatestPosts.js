@@ -36,14 +36,14 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
         <>
             <div className="desktopContainer">
                     <Grid container spacing={2}>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <Item>
                                 <h3 className="categoryTitle">Featured</h3>
                                 <hr className="separator"/>
                                 {renderPostPreviews(featuredPosts)}
                             </Item>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <Item>
                                 <h3 className="categoryTitle">All</h3>
                                 <hr className="separator"/>
@@ -52,26 +52,6 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
                         </Grid>
                     </Grid>
             </div>
-            <div className="mobileContainer">
-                    <Grid container spacing={1}>
-                        <Grid item xs={8}>
-                            <Item>
-                                <h3 className="categoryTitle">Featured</h3>
-                                <hr className="separator"/>
-                                {renderPostPreviews(featuredPosts)}
-                            </Item>
-                        </Grid>
-                        <Grid item xs={8}>
-                            <Item>
-                                <h3 className="categoryTitle">All</h3>
-                                <hr className="separator"/>
-                                {renderPostPreviews(allPosts)}
-                            </Item>
-                        </Grid>
-                    </Grid>
-            </div>
-
-
        </>
     )
 }
