@@ -10,7 +10,7 @@ axios.defaults.baseURL= "https://worldofnabeeda-strapi.herokuapp.com";
 export default function MyApp({ Component, pageProps, featuredPosts}) {
   return (
   <div className="app">
-    <TopBar featured={featuredPosts} />
+    <TopBar  />
     <NavBar />
       <div className="container">
       <Component {...pageProps}/>
@@ -18,19 +18,3 @@ export default function MyApp({ Component, pageProps, featuredPosts}) {
   </div>
   )
 }
-
-
-//Gets all of the data from the Strapi CMS using API Endpoints and Axios
-export async function getStaticProps() {
-
-  //This queries the CMS for all the posts that have been marked as 'featured' in the CMS
-  const featuredPostRes = await axios.get("/posts?featured=true")
-
-
-  //Returns data from api as a prop to be use in component
-  return {
-    props: {
-      featuredPosts: featuredPostRes.data,
-    }
-  }
-} 

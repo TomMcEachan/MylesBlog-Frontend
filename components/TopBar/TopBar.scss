@@ -20,10 +20,12 @@
 
         .latestBoxPost {
             transition: .5s;
+            cursor: pointer;
             &:hover{
                 color: #50D0E8;
             }
         }
+        
     }
 
     ul{
@@ -35,8 +37,9 @@
     .socialContainer {
         .socialLink {
         color: #50D0E8;
-        margin: 0 .5em;
+        margin:  .5em;
         cursor: pointer;
+        
         }
     }
 

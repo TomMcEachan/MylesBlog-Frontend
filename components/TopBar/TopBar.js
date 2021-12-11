@@ -2,31 +2,29 @@ import Link from 'next/link';
 import {BsTwitter, BsFacebook, BsInstagram, BsYoutube} from 'react-icons/bs';
 
 
-export default function TopBar({featuredPosts}) {
 
+export default function TopBar() {
+
+    
     //Renders the TopBar
     return (
         <nav className="topBar">
             <div className="container">
-                <div className="latestContainer">
-                    <p className="latestBox">Latest Post</p>
-                    <p className="latestBoxPost">title of very important post</p>
-                </div>
                 <div className="socialContainer">
                     <ul>
                         <li>
-                            <Link  href="https://twitter.com/worldofnabeeda" target="_blank" passHref>
+                            <a href="https://twitter.com/worldofnabeeda" target="_blank" rel="noreferrer" >
                                 <BsTwitter className="socialLink" />
-                            </Link>
-                            <Link href="https://www.facebook.com/worldofnabeeda" passHref>
+                            </a>
+                            <a href="https://www.facebook.com/worldofnabeeda" target="_blank" rel="noreferrer" >
                                 <BsFacebook className="socialLink" />
-                            </Link>
-                            <Link  href="https://www.instagram.com/worldofnabeeda/?hl=en" passHref>
-                            <BsInstagram className="socialLink" />
-                            </Link>
-                            <Link href="https://www.youtube.com/channel/UCWPYFsoJUNmbcqazVpQMW3w" passHref>
+                            </a>
+                            <a  href="https://www.instagram.com/worldofnabeeda/?hl=en" target="_blank" rel="noreferrer">
+                                <BsInstagram className="socialLink" />
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCWPYFsoJUNmbcqazVpQMW3w" target="_blank" rel="noreferrer">
                                 <BsYoutube className="socialLink" />
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </div>
