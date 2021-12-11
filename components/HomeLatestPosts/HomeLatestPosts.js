@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import PostPreview from '../PostPreview/PostPreview';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 export default function HomeLatestPosts({allPosts, featuredPosts}) {
@@ -32,23 +33,45 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
 
     //This a Grid Container with two columns on articles
     return (
-       <div>
-            <Grid container spacing={2}>
-                <Grid item xs={6}>
-                    <Item>
-                        <h3 className="categoryTitle">Featured</h3>
-                        <hr className="separator"/>
-                        {renderPostPreviews(featuredPosts)}
-                    </Item>
-                </Grid>
-                <Grid item xs={6}>
-                    <Item>
-                        <h3 className="categoryTitle">All</h3>
-                        <hr className="separator"/>
-                        {renderPostPreviews(allPosts)}
-                    </Item>
-                </Grid>
-            </Grid>
-       </div>
+        <>
+            <div className="desktopContainer">
+                    <Grid container spacing={2}>
+                        <Grid item xs={6}>
+                            <Item>
+                                <h3 className="categoryTitle">Featured</h3>
+                                <hr className="separator"/>
+                                {renderPostPreviews(featuredPosts)}
+                            </Item>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <Item>
+                                <h3 className="categoryTitle">All</h3>
+                                <hr className="separator"/>
+                                {renderPostPreviews(allPosts)}
+                            </Item>
+                        </Grid>
+                    </Grid>
+            </div>
+            <div className="mobileContainer">
+                    <Grid container spacing={1}>
+                        <Grid item xs={8}>
+                            <Item>
+                                <h3 className="categoryTitle">Featured</h3>
+                                <hr className="separator"/>
+                                {renderPostPreviews(featuredPosts)}
+                            </Item>
+                        </Grid>
+                        <Grid item xs={8}>
+                            <Item>
+                                <h3 className="categoryTitle">All</h3>
+                                <hr className="separator"/>
+                                {renderPostPreviews(allPosts)}
+                            </Item>
+                        </Grid>
+                    </Grid>
+            </div>
+
+
+       </>
     )
 }
