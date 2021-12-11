@@ -1,16 +1,10 @@
-
+import React from 'react'
 import {BsTwitter, BsFacebook, BsInstagram, BsYoutube} from 'react-icons/bs';
 
-
-
-export default function TopBar() {
-
-    
-    //Renders the TopBar
+export default function Footer() {
     return (
-        <nav className="topBar">
-            <div className="container">
-                <div className="socialContainer">
+        <div>
+              <div className="footerSocialContainer">
                     <ul>
                         <li>
                             <a href="https://twitter.com/worldofnabeeda" target="_blank" rel="noreferrer" >
@@ -28,9 +22,6 @@ export default function TopBar() {
                         </li>
                     </ul>
                 </div>
-            </div>
-    </nav>
-    ) 
+        </div>
+    )
 }
-
-
