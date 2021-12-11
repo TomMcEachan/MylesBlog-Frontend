@@ -2,10 +2,13 @@
 
     padding: 1em 0;
 
-    .container{
+    .navContainer{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 0 1em;
     }
 
     ul{
@@ -30,11 +33,26 @@
             }
     }
 
-    .logo{
+    .navLogo{
         overflow: hidden;
         cursor: pointer;
-        transition: 2ms;
-        
+        transition: 2ms;  
+        width: 75%;
+        height: 75%;
     }
 
+}
+
+@media screen and (max-width: 960px) {
+    .navContainer{
+        display: none;
+
+        ul {
+            display: none;
+        }
+
+        img {
+            display: none;
+        }
+    }
 }
