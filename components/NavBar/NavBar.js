@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Link from 'next/link';
-import Image from 'next/image';
 import Hamburger from './Hamburger';
 import {useState} from 'react';
 
@@ -13,9 +12,6 @@ export default function NavBar() {
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
     }
-
-
-
 
     return (
         <nav className="navBar">
@@ -50,8 +46,10 @@ export default function NavBar() {
                     </li>
                 </ul>
                 </div>
-                <div className="hamburger" onClick={toggleHamburger}>
-                    <Hamburger isOpen={hamburgerOpen}/>
+                <div className="hamburgerContainer">
+                    <div className="hamburger" onClick={toggleHamburger}>
+                        <Hamburger isOpen={hamburgerOpen}/>
+                    </div>
                 </div>
         </nav>  
     )
