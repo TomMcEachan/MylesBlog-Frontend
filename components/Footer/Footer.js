@@ -1,9 +1,10 @@
 import React from 'react'
 import {BsTwitter, BsFacebook, BsInstagram, BsYoutube} from 'react-icons/bs';
 
+
 export default function Footer() {
     return (
-        <div>
+        <footer className="footer">
               <div className="footerSocialContainer">
                     <ul>
                         <li>
@@ -22,6 +23,15 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-        </div>
+                <div className="copyright">
+                    <p>© 2020 NABEEDA BAKALI</p>
+                </div>
+                <div className="designer">
+                    <a href="https://www.linkedin.com/in/tommceachan/?originalSubdomain=uk" target="_blank" rel="noreferrer">
+                        <p>Designed by Tom McEachan in Glasgow, Scotland</p>
+                    </a>
+                </div>
+        </footer>
+
     )
 }
