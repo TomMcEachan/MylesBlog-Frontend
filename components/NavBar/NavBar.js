@@ -1,8 +1,21 @@
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
+import Hamburger from './Hamburger';
+import {useState} from 'react';
 
 export default function NavBar() {
+
+
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen);
+    }
+
+
+
+
     return (
         <nav className="navBar">
             <div className="container">
@@ -31,7 +44,11 @@ export default function NavBar() {
                         </Link>
                     </li>
                 </ul>
+
+                <div className="hamburger" onClick={toggleHamburger}>
+                    <Hamburger isOpen={hamburgerOpen}/>
+                </div>
             </div>
-        </nav>
+        </nav>  
     )
 }
