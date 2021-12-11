@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import PostPreview from '../PostPreview/PostPreview';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 export default function HomeLatestPosts({allPosts, featuredPosts}) {
@@ -13,13 +14,12 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
 
     //Sets all posts and gets 4
     useEffect(() => {
-       setAllPosts(getAllPosts.slice(0,5));
+       setAllPosts(getAllPosts => ({...getAllPosts.slice(0,5)}));
     }, [allPosts]);
-
 
     //Sets featured posts and gets 4
     useEffect(() => {
-        setFeaturedPosts(getFeaturedPosts.slice(0,5));
+        setFeaturedPosts(getFeaturedPosts => ({...getFeaturedPosts.slice(0,5)}));
     }, [featuredPosts]);
 
 
@@ -33,23 +33,25 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
 
     //This a Grid Container with two columns on articles
     return (
-       <div>
-            <Grid container spacing={2}>
-                <Grid item xs={6}>
-                    <Item>
-                        <h3 className="categoryTitle">Featured</h3>
-                        <hr className="separator"/>
-                        {renderPostPreviews(featuredPosts)}
-                    </Item>
-                </Grid>
-                <Grid item xs={6}>
-                    <Item>
-                        <h3 className="categoryTitle">All</h3>
-                        <hr className="separator"/>
-                        {renderPostPreviews(allPosts)}
-                    </Item>
-                </Grid>
-            </Grid>
-       </div>
+        <>
+            <div className="desktopContainer">
+                    <Grid container spacing={2}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                            <Item>
+                                <h3 className="categoryTitle">Featured</h3>
+                                <hr className="separator"/>
+                                {renderPostPreviews(featuredPosts)}
+                            </Item>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                            <Item>
+                                <h3 className="categoryTitle">All</h3>
+                                <hr className="separator"/>
+                                {renderPostPreviews(allPosts)}
+                            </Item>
+                        </Grid>
+                    </Grid>
+            </div>
+       </>
     )
 }

@@ -1,20 +1,23 @@
+
+
 .navBar {
 
     padding: 1em 0;
 
-    .container{
+    .navContainer{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 0 1em;
     }
-
 
     ul{
         margin: unset;
         padding: unset;
         list-style: none;
     }
-
 
     .title {
         font-size: 1.5em;
@@ -32,12 +35,38 @@
             }
     }
 
-    .logo{
-        width: 15%;
-        height: 15%;
+    .navLogo{
         overflow: hidden;
         cursor: pointer;
-        transition: 2ms;
-        
+        transition: 2ms;  
+        width: 25%;
+        height: 25%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .navContainer{
+        display: none;
+
+        ul {
+            display: none;
+        }
+
+        img {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .navLogo{
+        overflow: hidden;
+        cursor: pointer;
+        transition: 2ms;  
+        width: 50%;
+        height: 50%;
     }
 }
