@@ -1,5 +1,6 @@
 import NavBar from '../components/NavBar/NavBar';
 import TopBar from '../components/TopBar/TopBar';
+import Footer from '../components/Footer/Footer';
 import axios from 'axios';
 import '../styles/index.scss';
 
@@ -15,6 +16,7 @@ export default function MyApp({ Component, pageProps, featuredPosts}) {
       <div className="container">
       <Component {...pageProps}/>
       </div>
+    <Footer />
   </div>
   )
 }
