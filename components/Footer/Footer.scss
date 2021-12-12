@@ -1,0 +1,51 @@
+.footer {
+    
+    background-color: pink;
+    color: black;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 1em;
+
+    ul{
+        margin: unset;
+        list-style: none;
+        justify-content: space-between;
+        color: black;
+        margin:  .5em;
+        cursor: pointer;
+        font-size: x-large;
+    }
+
+    .socialLinkContainer{
+        padding-right: 1em;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .footer{
+        
+        ul {
+            display: none;
+            justify-content: space-between;
+        }
+
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    
+}
+
