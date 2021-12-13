@@ -8,7 +8,6 @@
         p{
             margin-left: 1em;
             color: white;
-            font-size: small;
         }
 
         .latestBox{
@@ -34,11 +33,16 @@
         list-style: none;
     }
 
+
     .socialContainer {
         .socialLink {
         color: #50D0E8;
         margin:  .5em;
         cursor: pointer;
+
+        &:hover{
+            color: pink;
+        }
         
         }
     }
