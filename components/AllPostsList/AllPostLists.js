@@ -1,10 +1,10 @@
-import PostPreview from '../PostPreview/PostPreview.js';
+import CategoryPreview from '../CategoryPreview/CategoryPreview';
 
 export default function AllPostLists({posts, listTitle}) {
 
-    function renderPostPreviews() {
+    function renderCategoryPreviews() {
         return posts.map((post) => {
-            return <PostPreview post={post} key={post.id} />;
+            return <CategoryPreview post={post} key={post.id} />;
         });
 
     }
@@ -12,7 +12,7 @@ export default function AllPostLists({posts, listTitle}) {
     return (
        <>
        <h2>{listTitle}</h2>
-       {renderPostPreviews()}
+       {renderCategoryPreviews()}
        </>
     )
 }

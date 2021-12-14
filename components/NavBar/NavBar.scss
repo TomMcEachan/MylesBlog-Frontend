@@ -17,8 +17,10 @@
         margin: unset;
         padding: unset;
         list-style: none;
+        font-size: x-large;
     }
 
+    
     .title {
         font-size: 1.5em;
     }
@@ -39,8 +41,8 @@
         overflow: hidden;
         cursor: pointer;
         transition: 2ms;  
-        width: 25%;
-        height: 25%;
+        width: 35%;
+        height: 35%;
     }
 
 }
