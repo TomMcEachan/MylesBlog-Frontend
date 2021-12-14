@@ -25,7 +25,7 @@ function Item ({featured}) {
             <h2>{featured[0].title}</h2>
             <p>{featured[0].description}</p>
             <Button className="CheckButton">
-                Check it out!
+                Read Blog
             </Button>
         </Paper>
     )
