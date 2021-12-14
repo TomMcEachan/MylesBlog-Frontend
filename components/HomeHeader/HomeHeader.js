@@ -1,11 +1,10 @@
 import React from 'react'
-import Image from 'next/image';
 import HomeCarousel from '../HomeCarousel/HomeCarousel';
 
-export default function HomeHeader() {
+export default function HomeHeader({featuredPosts}) {
     return (
         <header>
-          <HomeCarousel />
+          <HomeCarousel featuredPosts={featuredPosts}/>
         </header>
     )
 }

@@ -3,24 +3,15 @@ import Carousel from 'react-material-ui-carousel';
 import {Paper, Button} from '@mui/material';
 
 
-export default function HomeCarousel(props) {
+export default function HomeCarousel({featuredPosts}) {
 
-    var items = [
-        {
-            name: "Random Name #1",
-            description: "Probably the most random thing you have ever seen!"
-        },
-        {
-            name: "Random Name #2",
-            description: "Hello World!"
-        }
-    ]
+    const featured =featuredPosts.slice(0, 4);
 
     return (
         <>
-           <Carousel>
+           <Carousel clasName="carousel">
                {
-                   items.map((item, i) => <Item key={i} item={item} />)
+                   featured.map((feature) => <Item key={feature.id} featured={featured} />)
                }
            </Carousel>
         </>
@@ -28,11 +19,11 @@ export default function HomeCarousel(props) {
 }
 
 
-function Item (props) {
+function Item ({featured}) {
     return (
         <Paper>
-            <h2>{props.item.name}</h2>
-            <p>{props.item.description}</p>
+            <h2>{featured[0].title}</h2>
+            <p>{featured[0].description}</p>
             <Button className="CheckButton">
                 Check it out!
             </Button>
