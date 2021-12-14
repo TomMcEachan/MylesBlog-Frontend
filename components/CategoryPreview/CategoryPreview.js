@@ -4,8 +4,6 @@ import Link from 'next/link';
 
 export default function PostPreview({post}) {
 
-        console.log(post.image);
-
         return (
             <>
                 <div className="postPreview">

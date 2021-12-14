@@ -1,7 +1,6 @@
 .postPreview {
     margin: 2em 0;
     padding: 1em;
-    background: white;
     transition: all 0.31 cubic-bezier(0.25, 0.8,0.25,1);
 
     h3{
@@ -20,10 +19,23 @@
     }
     
     .categoryBox{
-        p{
+        button{
             color: white;
             background-color: black;
+            padding: .5em 1em;
+            text-transform:capitalize;
+            font-size: small;
+            font-weight: bold;
         }
+    }
+
+    .title {
+        color: black;
+        margin-top: 1em;
+        
+    }
+    .author {
+        color: rgb(199, 142, 151);
     }
 }
 
