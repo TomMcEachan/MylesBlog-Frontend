@@ -4,21 +4,24 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function PostPreview({post}) {
-
-        console.log(post.image);
-
+    
         return (
             <>
                 <div className="postPreview">
                     <img alt={post.image.caption} src={post.image[0].formats.medium.url} className="previewImage" />
                     <div className="categoryBox">
-                            <button className="category">{post.categories[0].name}</button>
+                            <a href={`${post.categories[0].name}`}><button className="category">{post.categories[0].name}</button></a>
                     </div>
-                    <h3>{post.title}</h3>
-                    <p>{post.description}</p>
-                    <Link href={`/posts/${post.id}`} passHref>  
-                    <button>Read More</button>
-                    </Link>
+                    <div className="postPreviewContent">
+                        <h3 className="title">{post.title}</h3>
+                        <div className="author">
+                            <p>By Nabeeda Bakali</p>
+                        </div>
+                        <p>{post.description}</p>
+                        <Link href={`/posts/${post.id}`} passHref>  
+                        <button>Read More</button>
+                        </Link>
+                    </div>
                 </div>
             </>
         )

@@ -6,7 +6,6 @@ import {useState} from 'react';
 
 export default function NavBar() {
 
-
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     const toggleHamburger = () => {
