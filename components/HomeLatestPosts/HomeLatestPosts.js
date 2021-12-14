@@ -6,21 +6,8 @@ import Item from '@mui/material/Grid';
 
 export default function HomeLatestPosts({allPosts, featuredPosts}) {
 
-    //Creates state each query
-    const [getAllPosts, setAllPosts] = useState([]);
-    const [getFeaturedPosts, setFeaturedPosts] = useState([]);
-
-
-    //Sets all posts and gets 4
-    useEffect(() => {
-       setAllPosts(getAllPosts => ({...getAllPosts.slice(0,1)}));
-    }, [allPosts]);
-
-    //Sets featured posts and gets 4
-    useEffect(() => {
-        setFeaturedPosts(getFeaturedPosts => ({...getFeaturedPosts.slice(0,1)}));
-    }, [featuredPosts]);
-
+    const all = allPosts.slice(0,2);
+    const featured = featuredPosts.slice(0, 2);
 
     //This function renders the PostPreview component with the data queries from the Strapi Database.
     function renderPostPreviews(type) {
@@ -39,14 +26,14 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
                             <Item>
                                 <h3 className="categoryTitle">Featured</h3>
                                 <hr className="separator"/>
-                                {renderPostPreviews(featuredPosts)}
+                                {renderPostPreviews(featured)}
                             </Item>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <Item>
                                 <h3 className="categoryTitle">All</h3>
                                 <hr className="separator"/>
-                                {renderPostPreviews(allPosts)}
+                                {renderPostPreviews(all)}
                             </Item>
                         </Grid>
                     </Grid>
