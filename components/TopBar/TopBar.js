@@ -1,11 +1,7 @@
-
 import {BsTwitter, BsFacebook, BsInstagram, BsYoutube} from 'react-icons/bs';
 
 
-
 export default function TopBar() {
-
-    
     //Renders the TopBar
     return (
         <nav className="topBar">
@@ -32,5 +28,7 @@ export default function TopBar() {
     </nav>
     ) 
 }
+
+
 
 

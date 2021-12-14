@@ -8,7 +8,7 @@ import HomeLatestPosts from '../components/HomeLatestPosts/HomeLatestPosts';
 export default function Home({allPosts, featuredPosts}) {
   return (
     <>
-      <HomeHeader />
+      <HomeHeader featuredPosts={featuredPosts}/>
       <HomeLatestPosts allPosts={allPosts} featuredPosts={featuredPosts}/>
     </>
   )
@@ -29,7 +29,6 @@ export async function getStaticProps() {
     props: {
       allPosts: allPostsRes.data,
       featuredPosts: featuredPostRes.data,
-     
     }
   }
 } 

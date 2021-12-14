@@ -8,15 +8,17 @@ import '../styles/index.scss';
 axios.defaults.baseURL= "https://worldofnabeeda-strapi.herokuapp.com";
 
 //Returns the App to the Browser
-export default function MyApp({ Component, pageProps, featuredPosts}) {
+export default function MyApp({ Component, pageProps, latestPosts}) {
+
   return (
   <div className="app">
-    <TopBar  />
+    <TopBar />
     <NavBar />
-      <div className="container">
+    <div className="container">
       <Component {...pageProps}/>
-      </div>
+    </div>
     <Footer />
   </div>
   )
 }
+
