@@ -10,7 +10,9 @@ export default function PostPreview({post}) {
                 <div className="postPreview">
                     <img alt={post.image.caption} src={post.image[0].formats.medium.url} className="previewImage" />
                     <div className="categoryBox">
-                            <a href={`${post.categories[0].name}`}><button className="category">{post.categories[0].name}</button></a>
+                            <Link href={`${post.categories[0].name}`} passHref>
+                                <button className="category">{post.categories[0].name}</button>
+                            </Link>
                     </div>
                     <div className="postPreviewContent">
                         <h3 className="title">{post.title}</h3>
@@ -19,7 +21,7 @@ export default function PostPreview({post}) {
                         </div>
                         <p>{post.description}</p>
                         <Link href={`/posts/${post.id}`} passHref>  
-                        <button>Read More</button>
+                            <button className="readMoreButton">Read More</button>
                         </Link>
                     </div>
                 </div>

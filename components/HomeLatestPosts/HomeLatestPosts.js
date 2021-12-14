@@ -13,12 +13,12 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
 
     //Sets all posts and gets 4
     useEffect(() => {
-       setAllPosts(getAllPosts => ({...getAllPosts.slice(0,5)}));
+       setAllPosts(getAllPosts => ({...getAllPosts.slice(0,1)}));
     }, [allPosts]);
 
     //Sets featured posts and gets 4
     useEffect(() => {
-        setFeaturedPosts(getFeaturedPosts => ({...getFeaturedPosts.slice(0,5)}));
+        setFeaturedPosts(getFeaturedPosts => ({...getFeaturedPosts.slice(0,1)}));
     }, [featuredPosts]);
 
 
