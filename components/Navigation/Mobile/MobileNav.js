@@ -1,9 +1,9 @@
 import React from 'react'
-import NavLinks from '../NavBar/NavLinks';
+import NavLinks from './NavLinks';
 
 export default function MobileNav() {
     return (
-        <nav className="mobile-nav">
+        <nav className="mobileNav">
             <NavLinks />
         </nav>
     )

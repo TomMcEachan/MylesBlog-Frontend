@@ -1,7 +1,6 @@
-import NavBar from '../components/NavBar/NavBar';
+import DesktopNav from '../components/Navigation/Desktop/DesktopNav';
 import TopBar from '../components/TopBar/TopBar';
 import Footer from '../components/Footer/Footer';
-import HamburgerMenu from '../components/NavBar/HamburgerMenu';
 import axios from 'axios';
 import '../styles/index.scss';
 
@@ -14,8 +13,7 @@ export default function MyApp({ Component, pageProps, latestPosts}) {
   return (
   <div className="app">
     <TopBar />
-    <HamburgerMenu />
-    <NavBar />
+    <DesktopNav />
     <div className="container">
       <Component {...pageProps}/>
     </div>
