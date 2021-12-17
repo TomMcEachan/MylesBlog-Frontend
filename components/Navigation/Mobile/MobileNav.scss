@@ -1,37 +1,54 @@
-.hamburger {
+.mobileNav {
     display: none
 }
 
-
-.burger {
-    width: 2rem;
-    height: 0.25rem;
-    border-radius: 10px;
-    background-color: black;
-    transform-origin: 1px;
-    transition: all 0.3s linear;
-}
-
-
 @media screen and (max-width: 960px){
-    
-    .burgerContainer{
+    .mobileNav{
         display: flex;
-        margin: 5px;
+        align-items: center;
+
+        .hamburgerMenu{
+            display: flex;
+            position: absolute;
+            background: black;
+            top: 80px;
+            right: 0;
+            width: 100%;
+            font-size: x-large;
+
+            ul {
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                margin: 1em 1em;
+            }
+        }
+
+        .mobileLink{
+            display: flex;
+            color: white;
+            &:hover{
+                text-decoration: none;
+                color:#FBD3E5;
+            }   
+
+        }
     }
-    
-    .hamburger {
-        width: 2rem;
-        height: 2rem;
-        display: flex;
-        justify-content: space-around;
-        flex-flow: column nowrap;
-        z-index: 10;
-        margin: 10px 10px;
+
+    .hamburgerIcon{
+        color: pink;
+        border-color: black;
         position: absolute;
-        top: .75em;
-        /* left: .5em; */
-        right: 0;
+        right:  5%;
+        cursor: pointer;
     }
+
+    .closeIcon{
+        color: pink;
+        position: absolute;
+        right:  5%;
+        cursor: pointer;
+    }
+    
 }
 

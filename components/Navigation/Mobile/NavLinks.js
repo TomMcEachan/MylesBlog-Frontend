@@ -3,26 +3,26 @@ import Link from 'next/link';
 
 export default function NavLinks() {
     return (
-        <div className="navBar">
+        <div className="hamburgerMenu">
             <ul>
                 <li>
                     <Link  href="/travel">
-                        <a className="menuLink">Travel</a>
+                        <a className="mobileLink">Travel</a>
                     </Link>
                     <Link href="/lifestyle">
-                    <a className="menuLink">Lifestyle</a>
+                    <a className="mobileLink">Lifestyle</a>
                     </Link>
                     <Link href="/causes">
-                        <a className="menuLink">Causes</a>
+                        <a className="mobileLink">Causes</a>
                     </Link>
                     <Link href="/careers">
-                        <a className="menuLink">Careers</a>
+                        <a className="mobileLink">Careers</a>
                     </Link>
                     <Link href="/education">
-                        <a className="menuLink">Education</a>
+                        <a className="mobileLink">Education</a>
                     </Link>
                     <Link href="/all">
-                        <a className="menuLink">All</a>
+                        <a className="mobileLink">All</a>
                     </Link>         
                 </li>
             </ul> 
