@@ -53,7 +53,13 @@
         
     }
     .author {
-        color: rgb(199, 142, 151);
+        color: black;
+        font-weight: bold;
+    }
+
+    .authorName{
+        color: pink;
+        text-decoration: none;
     }
 
     .postPreviewContent{

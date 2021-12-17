@@ -5,13 +5,7 @@ import Hamburger from './Hamburger';
 import {useState} from 'react';
 
 export default function NavBar() {
-
-    const [hamburgerOpen, setHamburgerOpen] = useState(false);
-
-    const toggleHamburger = () => {
-        setHamburgerOpen(!hamburgerOpen);
-    }
-
+    
     return (
         <nav className="navBar">
             <div className="navContainer">
@@ -44,11 +38,6 @@ export default function NavBar() {
                         </Link>
                     </li>
                 </ul>
-                </div>
-                <div className="hamburgerContainer">
-                    <div className="hamburger" onClick={toggleHamburger}>
-                        <Hamburger isOpen={hamburgerOpen}/>
-                    </div>
                 </div>
         </nav>  
     )
