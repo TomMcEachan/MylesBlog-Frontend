@@ -6,8 +6,8 @@ import Item from '@mui/material/Grid';
 
 export default function HomeLatestPosts({allPosts, featuredPosts}) {
 
-    const all = allPosts.slice(0,2);
-    const featured = featuredPosts.slice(0, 2);
+    const all = allPosts.slice(0, 1);
+    const featured = featuredPosts.slice(0, 1);
 
     //This function renders the PostPreview component with the data queries from the Strapi Database.
     function renderPostPreviews(type) {
