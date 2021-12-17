@@ -9,7 +9,7 @@ export default function HomeCarousel({featuredPosts}) {
 
     return (
         <>
-           <Carousel clasName="carousel">
+           <Carousel className="carousel">
                {
                    featured.map((feature) => <Item key={feature.id} featured={featured} />)
                }

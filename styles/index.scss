@@ -1,12 +1,17 @@
+
+/* Common Styles + Reset */
 @import "./common.scss";
 
 
-//components 
-@import "../components/NavBar/NavBar.scss";
+/* Default Project Component Styles */ 
+@import "../components/Navigation/Desktop/DesktopNav.scss";
 @import "../components/PostPreview/PostPreview.scss";
 @import "../components/CategoryPreview/CategoryPreview.scss";
 @import "../components/TopBar/TopBar.scss";
 @import "../components/HomeLatestPosts/HomeLatestPosts.scss";
-@import "../components/NavBar/Hamburger.scss";
+@import "../components/Navigation/Mobile/MobileNav.scss";
 @import "../components/Footer/Footer.scss";
 @import "../components/HomeCarousel/HomeCarousel.scss";
+
+
+/* Dark Mode Styles */
