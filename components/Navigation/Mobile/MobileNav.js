@@ -1,29 +1,14 @@
 import React from 'react';
 import NavLinks from './NavLinks';
-import {GiHamburgerMenu} from 'react-icons/gi';
-import {MdClose} from 'react-icons/md';
-import {useState} from 'react'; 
+import {slide as Menu} from 'react-burger-menu';
 
 export default function MobileNav() {
 
-    const [openMenu, setOpenMenu] = useState(false);
-
-    const hamburgerIcon =  <GiHamburgerMenu className="hamburgerIcon"
-                                size={40}
-                                onClick={() => setOpenMenu(!openMenu)}
-                            />
-
-    const closeIcon =  <MdClose className="closeIcon" 
-                            size={40}
-                            onClick={() => setOpenMenu(!openMenu)}
-                        />
-
-    const closeMobileMenu = () => setOpenMenu(false);
-
     return (
-        <nav className="mobileNav">
-            {openMenu ? closeIcon : hamburgerIcon}
-            {openMenu && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu}/>}
+        <nav>
+            <Menu right>
+                <NavLinks />
+           </Menu>
         </nav>
     );
 }
