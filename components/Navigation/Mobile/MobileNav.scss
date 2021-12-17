@@ -13,20 +13,21 @@
             background: black;
             top: 80px;
             right: 0;
-            width: 100%;
+            width: 50%;
             font-size: x-large;
 
             ul {
                 display: flex;
                 list-style: none;
                 flex-direction: column;
-                margin: 1em 1em;
             }
         }
 
         .mobileLink{
             display: flex;
             color: white;
+            padding-left: 15%;
+           
             &:hover{
                 text-decoration: none;
                 color:#FBD3E5;

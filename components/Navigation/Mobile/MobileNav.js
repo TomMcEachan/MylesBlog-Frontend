@@ -18,10 +18,12 @@ export default function MobileNav() {
                             onClick={() => setOpenMenu(!openMenu)}
                         />
 
+    const closeMobileMenu = () => setOpenMenu(false);
+
     return (
         <nav className="mobileNav">
             {openMenu ? closeIcon : hamburgerIcon}
-            {openMenu && <NavLinks />}
+            {openMenu && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu}/>}
         </nav>
     );
 }
