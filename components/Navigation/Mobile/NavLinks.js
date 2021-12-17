@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import {BsTwitter, BsFacebook, BsInstagram, BsYoutube} from 'react-icons/bs';
 
+
 export default function NavLinks(props) {
     return (
         <div className="bm-menu">
@@ -30,24 +31,24 @@ export default function NavLinks(props) {
                     </Link>         
                 </li>
             </ul> 
-            <div className="socialContainer">
+            <div className="mobileSocialContainer">
                 <ul>
                     <li>
                         <a href="https://twitter.com/worldofnabeeda" target="_blank" rel="noreferrer" >
-                            <BsTwitter className="socialLink" />
+                            <BsTwitter className="mobileSocialLink" />
                         </a>
                         <a href="https://www.facebook.com/worldofnabeeda" target="_blank" rel="noreferrer" >
-                            <BsFacebook className="socialLink" />
+                            <BsFacebook className="mobileSocialLink" />
                         </a>
                         <a  href="https://www.instagram.com/worldofnabeeda/?hl=en" target="_blank" rel="noreferrer">
-                                <BsInstagram className="socialLink" />
+                            <BsInstagram className="mobileSocialLink" />
                         </a>
                         <a href="https://www.youtube.com/channel/UCWPYFsoJUNmbcqazVpQMW3w" target="_blank" rel="noreferrer">
-                            <BsYoutube className="socialLink" />
+                            <BsYoutube className="mobileSocialLink" />
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div>     
         </div>
     )
 }

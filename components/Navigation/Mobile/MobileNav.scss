@@ -1,3 +1,15 @@
+
+.hamburgerMenu{
+    display: none;
+}
+
+
+@media screen and (max-width: 1280px) {
+    
+.hamburgerMenu{
+    display: flex;
+}
+    
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: absolute;
@@ -41,20 +53,19 @@
   /* General sidebar styles */
   .bm-menu {
     background: black;
-    padding: 0 0.6em ;
     font-size: x-large;
   }
   
   /* Wrapper for item list */
   .bm-item-list {
+    display: flex;
     color: white;
-    padding: 0.8em;
     list-style: none;
   }
   
   /* Individual item */
   .mobileLink {
-    display: inline-block;
+    display: flex;
     font-size: xx-large;
     
     &:hover{
@@ -68,3 +79,33 @@
   .bm-overlay {
     background: pink;
   }
+
+  .mobileSocialContainer {
+    display: flex;
+    
+
+    ul{
+        list-style: none;
+        
+        
+    }
+    
+    .mobileSocialLink {
+        left: 0;
+        margin: 15px;
+        color: #50D0E8;
+        cursor: pointer;
+        padding: 0;
+    
+        &:hover{
+            color: pink;
+        }
+    }
+
+
+    .mobileCopyright{
+        display: flex;
+    }
+}
+
+}

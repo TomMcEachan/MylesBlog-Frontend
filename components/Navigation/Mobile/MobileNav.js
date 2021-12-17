@@ -5,7 +5,7 @@ import {slide as Menu} from 'react-burger-menu';
 export default function MobileNav() {
 
     return (
-        <nav>
+        <nav className="hamburgerMenu">
             <Menu right>
                 <NavLinks />
            </Menu>
