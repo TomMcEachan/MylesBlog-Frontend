@@ -11,7 +11,9 @@ export default function CategoryPreviewGrid({data}) {
                 <Grid item xs={6}>
                     <Item>
                         <div className="postPreview">
-                                <img alt={data.posts[0].image[0].caption} src={data.posts[0].image[0].formats.medium.url} className="previewImageSmall" />
+                                <Link href={`/posts/${data.posts[0].id}`} passHref>  
+                                    <img alt={data.posts[0].image[0].caption} src={data.posts[0].image[0].formats.medium.url} className="previewImageSmall" />
+                                </Link>
                                 <div className="categoryBoxSmall">
                                     <Link href={`/${data.name}`} passHref>
                                         <button className="categorySmall">{data.name}</button>
@@ -19,12 +21,6 @@ export default function CategoryPreviewGrid({data}) {
                             </div>
                             <div className="postPreviewContentSmall">
                                 <h3 className="titleSmall">{data.posts[0].title}</h3>
-                                <div className="authorSmall">
-                                    <p>By <Link href="https://twitter.com/worldofnabeeda"><a className="authorNameSmall">Nabeeda Bakali</a></Link></p>
-                                </div>
-                                <Link href={`/posts/${data.posts[0].id}`} passHref>  
-                                    <button className="readMoreButtonSmall">Read More</button>
-                                </Link>
                             </div>
                         </div>
                     </Item>
@@ -32,20 +28,16 @@ export default function CategoryPreviewGrid({data}) {
                 <Grid item xs={6}>
                     <Item>
                         <div className="postPreview">
+                        <Link href={`/posts/${data.posts[1].id}`} passHref>
                             <img alt={data.posts[1].image[0].caption} src={data.posts[1].image[0].formats.medium.url} className="previewImageSmall" />
-                                <div className="categoryBoxSmall">
-                                    <Link href={`/${data.name}`} passHref>
-                                        <button className="categorySmall">{data.name}</button>
-                                    </Link>
+                        </Link>
+                        <div className="categoryBoxSmall">
+                                <Link href={`/${data.name}`} passHref>
+                                    <button className="categorySmall">{data.name}</button>
+                                </Link>
                                 </div>
-                            <div className="postPreviewContentSmall">
+                        <div className="postPreviewContentSmall">
                                     <h3 className="titleSmall">{data.posts[1].title}</h3>
-                                    <div className="authorSmall">
-                                        <p>By <Link href="https://twitter.com/worldofnabeeda"><a className="authorNameSmall">Nabeeda Bakali</a></Link></p>
-                                    </div>
-                                    <Link href={`/posts/${data.posts[1].id}`} passHref>  
-                                        <button className="readMoreButtonSmall">Read More</button>
-                                    </Link>
                             </div>
                         </div>
                     </Item>
@@ -53,20 +45,16 @@ export default function CategoryPreviewGrid({data}) {
                 <Grid item xs={6}>
                     <Item>
                         <div className="postPreview">
-                            <img alt={data.posts[2].image[0].caption} src={data.posts[2].image[0].formats.medium.url} className="previewImageSmall" />
-                                <div className="categoryBoxSmall">
+                            <Link href={`/posts/${data.posts[2].id}`} passHref>
+                                <img alt={data.posts[2].image[0].caption} src={data.posts[2].image[0].formats.medium.url} className="previewImageSmall" />
+                            </Link>
+                            <div className="categoryBoxSmall">
                                     <Link href={`/${data.name}`} passHref>
                                         <button className="categorySmall">{data.name}</button>
                                     </Link>
-                                </div>
+                            </div>
                             <div className="postPreviewContentSmall">
                                     <h3 className="titleSmall">{data.posts[2].title}</h3>
-                                    <div className="authorSmall">
-                                        <p>By <Link href="https://twitter.com/worldofnabeeda"><a className="authorNameSmall">Nabeeda Bakali</a></Link></p>
-                                    </div>
-                                    <Link href={`/posts/${data.posts[2].id}`} passHref>  
-                                        <button className="readMoreButtonSmall">Read More</button>
-                                    </Link>
                             </div>
                         </div>
                     </Item>
@@ -74,7 +62,9 @@ export default function CategoryPreviewGrid({data}) {
                 <Grid item xs={6}>
                     <Item>
                         <div className="postPreview">
-                            <img alt={data.posts[3].image[0].caption} src={data.posts[3].image[0].formats.medium.url} className="previewImageSmall" />
+                        <Link href={`/posts/${data.posts[3].id}`} passHref>  
+                            <img alt={data.posts[3].image[0].caption} src={data.posts[3].image[0].formats.medium.url} className="previewImageSmall" />               
+                        </Link>
                                 <div className="categoryBoxSmall">
                                     <Link href={`/${data.name}`} passHref>
                                         <button className="categorySmall">{data.name}</button>
@@ -82,12 +72,6 @@ export default function CategoryPreviewGrid({data}) {
                                 </div>
                             <div className="postPreviewContent">
                                     <h3 className="titleSmall">{data.posts[3].title}</h3>
-                                    <div className="authorSmall">
-                                        <p>By <Link href="https://twitter.com/worldofnabeeda"><a className="authorNameSmall">Nabeeda Bakali</a></Link></p>
-                                    </div>
-                                    <Link href={`/posts/${data.posts[3].id}`} passHref>  
-                                        <button className="readMoreButtonSmall">Read More</button>
-                                    </Link>
                             </div>
                         </div>
                     </Item>
