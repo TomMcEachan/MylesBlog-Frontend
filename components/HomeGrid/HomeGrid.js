@@ -6,12 +6,12 @@ import CategoryPreview from '../CategoryPreview/CategoryPreview';
 export default function HomeGrid({careerPosts}) {
 
 
-    const posts = careerPosts.slice(0, 2);
+    const posts = careerPosts.slice(0, 6);
     
     //This function renders the PostPreview component with the data queries from the Strapi Database.
     function renderPreviews(type) {
         return type.map((post) => {
-            return <CategoryPreview post={post} key={post.id} />;
+            return <CategoryPreview data={post} key={post.id} />;
         });
     }
 

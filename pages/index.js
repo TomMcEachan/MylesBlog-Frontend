@@ -26,16 +26,16 @@ export async function getStaticProps() {
   //This queries the CMS for all the posts that have been marked as 'featured' in the CMS
   const featuredPostRes = await axios.get("/posts?featured=true")
 
+  //This queries the CMS for all the posts that fall under the 'careers' category 
   const careerPostRes = await axios.get("/categories?name=careers");
-  const careerPostsData = careerPostRes.data[0].posts;
-  console.log(careerPostsData)
+  
   
   //Returns data from api as a prop to be use in component
   return {
     props: {
       allPosts: allPostsRes.data,
       featuredPosts: featuredPostRes.data,
-      careerPosts: careerPostsData
+      careerPosts: careerPostRes.data
     }
   }
 } 
