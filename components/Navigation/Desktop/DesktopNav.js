@@ -17,22 +17,16 @@ export default function DesktopNav() {
                 </Link>
                 <ul>
                     <li>
-                        <Link  href="/travel">
+                        <Link href="/travel" passHref>
                             <a className="menuLink">Travel</a>
                         </Link>
-                        <Link href="/lifestyle">
+                        <Link href="/lifestyle" passHref>
                             <a className="menuLink">Lifestyle</a>
                         </Link>
-                        <Link href="/causes">
-                            <a className="menuLink">Causes</a>
-                        </Link>
-                        <Link href="/careers">
+                        <Link href="/careers" passHref>
                             <a className="menuLink">Careers</a>
                         </Link>
-                        <Link href="/education">
-                            <a className="menuLink">Education</a>
-                        </Link>
-                        <Link href="/all">
+                        <Link href="/all" passHref>
                             <a className="menuLink">All</a>
                         </Link>
                     </li>

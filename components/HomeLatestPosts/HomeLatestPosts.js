@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import PostPreview from '../PostPreview/PostPreview';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';

@@ -8,25 +8,19 @@ export default function NavLinks(props) {
         <div className="bm-menu">
             <ul className="bm-item-list">
                 <li>
-                    <Link  href="/" >
+                    <Link  href="/" passHref >
                         <a className="mobileLink">Home</a>
                     </Link>
-                    <Link  href="/travel">
+                    <Link  href="/travel" passHref>
                         <a className="mobileLink">Travel</a>
                     </Link>
-                    <Link href="/lifestyle" >
-                    <a className="mobileLink">Lifestyle</a>
+                    <Link href="/lifestyle" passHref>
+                        <a className="mobileLink">Lifestyle</a>
                     </Link>
-                    <Link href="/causes" >
-                        <a className="mobileLink">Causes</a>
-                    </Link>
-                    <Link href="/careers" >
+                    <Link href="/careers" passHref>
                         <a className="mobileLink">Careers</a>
                     </Link>
-                    <Link href="/education" >
-                        <a className="mobileLink">Education</a>
-                    </Link>
-                    <Link href="/all" >
+                    <Link href="/all" passHref>
                         <a className="mobileLink">All</a>
                     </Link>         
                 </li>
