@@ -77,21 +77,20 @@
     }
 
     .readMoreButton{
-        color: white;
-        background-color: black;
-        border-color: none;
-        padding: .5em 1em;
-        border: none;
-        margin-top: 1.5em;
-        text-transform:capitalize;
+        color: black;
+        border-color: pink;
+        padding: .5em 0;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        margin-top: .7em;
         font-size: medium;
         font-weight: bold;
-        box-shadow: rgba(38, 38, 39, 0.2) 0px 7px 29px 0px;
-      
+        background: inherit;
 
         &:hover{
             color: black;
-            background-color: #50D0E8;
+            border-color: #50D0E8;
         }
     }
 
