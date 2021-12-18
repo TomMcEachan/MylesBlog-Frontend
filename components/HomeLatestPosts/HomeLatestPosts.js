@@ -31,7 +31,7 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <Item>
-                                <h3 className="categoryTitle">All</h3>
+                                <h3 className="categoryTitle">Latest</h3>
                                 <hr className="separator"/>
                                 {renderPostPreviews(all)}
                             </Item>

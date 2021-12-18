@@ -1,10 +1,10 @@
-import CategoryPreview from '../CategoryPreview/CategoryPreview';
+import PagePreview from '../PagePreview/PagePreview';
 
 export default function AllPostLists({posts, listTitle}) {
 
     function renderCategoryPreviews() {
         return posts.map((post) => {
-            return <CategoryPreview post={post} key={post.id} />;
+            return <PagePreview post={post} key={post.id} />;
         });
 
     }
