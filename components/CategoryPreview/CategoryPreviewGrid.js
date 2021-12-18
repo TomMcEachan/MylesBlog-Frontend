@@ -11,8 +11,8 @@ export default function CategoryPreviewGrid({data}) {
                 <Grid item xs={6}>
                     <Item>
                         <div className="postPreview">
-                                <Link href={`/posts/${data.posts[0].id}`} passHref>  
-                                    <img alt={data.posts[0].image[0].caption} src={data.posts[0].image[0].formats.medium.url} className="previewImageSmall" />
+                                <Link href={`/posts/${data.posts[0].id}`} passHref> 
+                                   <a><img alt={data.posts[0].image[0].caption} src={data.posts[0].image[0].formats.medium.url} className="previewImageSmall" /> </a> 
                                 </Link>
                                 <div className="categoryBoxSmall">
                                     <Link href={`/${data.name}`} passHref>
@@ -29,7 +29,7 @@ export default function CategoryPreviewGrid({data}) {
                     <Item>
                         <div className="postPreview">
                         <Link href={`/posts/${data.posts[1].id}`} passHref>
-                            <img alt={data.posts[1].image[0].caption} src={data.posts[1].image[0].formats.medium.url} className="previewImageSmall" />
+                            <a><img alt={data.posts[1].image[0].caption} src={data.posts[1].image[0].formats.medium.url} className="previewImageSmall" /> </a> 
                         </Link>
                         <div className="categoryBoxSmall">
                                 <Link href={`/${data.name}`} passHref>
@@ -46,7 +46,7 @@ export default function CategoryPreviewGrid({data}) {
                     <Item>
                         <div className="postPreview">
                             <Link href={`/posts/${data.posts[2].id}`} passHref>
-                                <img alt={data.posts[2].image[0].caption} src={data.posts[2].image[0].formats.medium.url} className="previewImageSmall" />
+                                <a><img alt={data.posts[2].image[0].caption} src={data.posts[2].image[0].formats.medium.url} className="previewImageSmall" /> </a>
                             </Link>
                             <div className="categoryBoxSmall">
                                     <Link href={`/${data.name}`} passHref>
@@ -63,7 +63,7 @@ export default function CategoryPreviewGrid({data}) {
                     <Item>
                         <div className="postPreview">
                         <Link href={`/posts/${data.posts[3].id}`} passHref>  
-                            <img alt={data.posts[3].image[0].caption} src={data.posts[3].image[0].formats.medium.url} className="previewImageSmall" />               
+                            <a><img alt={data.posts[3].image[0].caption} src={data.posts[3].image[0].formats.medium.url} className="previewImageSmall" /> </a>              
                         </Link>
                                 <div className="categoryBoxSmall">
                                     <Link href={`/${data.name}`} passHref>
