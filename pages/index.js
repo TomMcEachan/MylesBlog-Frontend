@@ -11,7 +11,7 @@ export default function Home({allPosts, featuredPosts, careerPosts}) {
     <>
       <HomeHeader featuredPosts={featuredPosts}/>
       <HomeLatestPosts allPosts={allPosts} featuredPosts={featuredPosts}/>
-     {/* } <HomeGrid posts={careerPosts} /> */}
+      <HomeGrid careerPosts={careerPosts}/>
     </>
   )
 }
@@ -26,15 +26,16 @@ export async function getStaticProps() {
   //This queries the CMS for all the posts that have been marked as 'featured' in the CMS
   const featuredPostRes = await axios.get("/posts?featured=true")
 
-  const careerResponse = await axios.get("/categories?name=careers");
-  const careerPostData = careerResponse.data[0].posts;
- 
+  const careerPostRes = await axios.get("/categories?name=careers");
+  const careerPostsData = careerPostRes.data[0].posts;
+  console.log(careerPostsData)
+  
   //Returns data from api as a prop to be use in component
   return {
     props: {
       allPosts: allPostsRes.data,
       featuredPosts: featuredPostRes.data,
-      careerPosts: careerPostData
+      careerPosts: careerPostsData
     }
   }
 } 

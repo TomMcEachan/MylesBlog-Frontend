@@ -1,17 +1,17 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
-import PostPreview from '../PostPreview/PostPreview';
+import CategoryPreview from '../CategoryPreview/CategoryPreview';
 
 export default function HomeGrid({careerPosts}) {
 
 
-    const career = careerPosts.slice(0, 1);
+    const posts = careerPosts.slice(0, 2);
     
     //This function renders the PostPreview component with the data queries from the Strapi Database.
     function renderPreviews(type) {
         return type.map((post) => {
-            return <PostPreview post={post} key={post.id} category={post.category} />;
+            return <CategoryPreview post={post} key={post.id} />;
         });
     }
 
@@ -22,7 +22,7 @@ export default function HomeGrid({careerPosts}) {
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                         <Item>
-                            {renderPreviews(career)}
+                            {renderPreviews(posts)}
                         </Item>
                     </Grid>
                  </Grid>   
