@@ -15,7 +15,7 @@
 
     .previewImage{
         width: 100%;
-        height: 23vw;
+        height: 100%;
         object-fit: cover;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         
@@ -72,10 +72,6 @@
         padding-bottom: 1em;
     }
 
-    .postDescription{
-        
-    }
-
     .readMoreButton{
         color: black;
         border-color: pink;
@@ -102,12 +98,6 @@
 
    .postPreview{
        padding: none !important;
-   }
-
-    .previewImage{
-        width: 100%;
-        height: 100vh;
-        
    }
 
    .title {

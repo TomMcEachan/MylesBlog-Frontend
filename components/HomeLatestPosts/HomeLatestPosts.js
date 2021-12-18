@@ -21,7 +21,7 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
     return (
         <>
             <div className="desktopContainer">
-                    <Grid container spacing={2}>
+                    <Grid container spacing={4}>
                         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <Item>
                                 <h3 className="categoryTitle">Featured</h3>
