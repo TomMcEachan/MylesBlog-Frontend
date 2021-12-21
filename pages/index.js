@@ -5,6 +5,8 @@ import HomeGrid from '../components/HomeGrid/HomeGrid';
 
 
 
+
+
 //This is what is displayed 
 export default function Home({allPosts, featuredPosts, travelPosts}) {
   return (
