@@ -3,10 +3,6 @@ import HomeHeader from '../components/HomeHeader/HomeHeader';
 import HomeLatestPosts from '../components/HomeLatestPosts/HomeLatestPosts';
 import HomeGrid from '../components/HomeGrid/HomeGrid';
 
-
-
-
-
 //This is what is displayed 
 export default function Home({allPosts, featuredPosts, travelPosts}) {
   return (
