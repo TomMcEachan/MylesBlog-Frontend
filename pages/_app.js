@@ -28,7 +28,7 @@ export default function MyApp({ Component, pageProps, latestPosts}) {
     <TopBar />
     <DesktopNav />
     <MobileNav />
-    <div className="container">
+    <div>
       <Component {...pageProps}/>
     </div>
     <Footer />

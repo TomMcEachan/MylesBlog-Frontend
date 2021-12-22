@@ -2,6 +2,7 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import Link from 'next/link';
+import AssignmentIcon from '@mui/icons-material/Assignment';
 
 
 
@@ -11,7 +12,33 @@ export default function HomeCarousel({featuredPosts}) {
 
     return (
         <>
-           <Carousel className="carousel">
+           <Carousel className="carousel"
+                interval={6000}
+                animation="fade"
+                navButtonsAlwaysVisible="true"
+                IndicatorIcon={<AssignmentIcon/>}
+                indicatorIconButtonProps={{
+                    style: {
+                        padding: '10px',
+                        color: 'black', 
+                    }
+                }}
+                activeIndicatorIconButtonProps={{
+                    style: {
+                        backgroundColor: 'pink',
+                        color: 'white'
+                    }
+                }}
+                indicatorContainerProps={{
+                    style: {
+                        marginTop: '50px', 
+                        textAlign: "center"
+                    }
+                }}
+           
+           
+           
+           >
                {
                    featured.map((feature) => <Item key={feature.id} posts={feature} />)
                }
