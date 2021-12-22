@@ -55,7 +55,7 @@ function Item ({posts}) {
             <section className="carouselLayer">
                 <h2 className="carouselTitle">{posts.title}</h2>
                 <p className="carouselAuthor">By Nabeeda Bakali</p>
-                <Link href={`${posts.categories[0].name}`} passHref>
+                <Link href={`/${posts.categories[0].name}`} passHref>
                     <button className="carouselCategoryButton">{posts.categories[0].name}</button>
                 </Link>
                 <Link href={`/posts/${posts.id}`} passHref>

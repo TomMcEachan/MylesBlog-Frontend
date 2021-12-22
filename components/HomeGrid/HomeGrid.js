@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 import CategoryPreviewHero from '../CategoryPreview/CategoryPreviewHero';
 import CategoryPreviewGrid from '../CategoryPreview/CategoryPreviewGrid';
+import VideoPlayer from '../VideoPlayer/VideoPlayer';
 
 export default function HomeGrid({travelPosts}) {
 
