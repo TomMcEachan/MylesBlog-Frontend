@@ -3,6 +3,7 @@ import React from 'react';
 import axios from 'axios';
 import MarkdownIt from 'markdown-it';
 import Head from 'next/head';
+const {URL} = require('url');
 
 export default function PostPage({post}) {
 
@@ -33,7 +34,8 @@ export default function PostPage({post}) {
 
  export async function getStaticProps({params}) {
 
-    const postRes = await axios.get(`/posts/?title=${params.title}`)
+    const postURL = `/posts/?title=${params.title}`
+    const postRes = await axios.get(postURL)
 
     return {
         props: {
