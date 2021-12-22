@@ -9,8 +9,10 @@ export default function Home({allPosts, featuredPosts, travelPosts}) {
   return (
     <>
       <HomeHeader featuredPosts={featuredPosts}/>
-      <HomeLatestPosts allPosts={allPosts} featuredPosts={featuredPosts}/>
-      <HomeGrid travelPosts={travelPosts}/>
+      <div className="container">
+        <HomeLatestPosts allPosts={allPosts} featuredPosts={featuredPosts}/>
+        <HomeGrid travelPosts={travelPosts}/>
+     </div>
     </>
   )
 }
