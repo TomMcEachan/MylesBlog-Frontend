@@ -1,6 +1,6 @@
 import axios from 'axios';
 import AllPostLists from '../components/AllPostsList/AllPostLists';
-
+import Head from 'next/head';
 
 export default function Travel ({posts, title}) {
 

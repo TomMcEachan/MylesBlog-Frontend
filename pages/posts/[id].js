@@ -12,7 +12,7 @@ export default function PostPage({post}) {
     return (
     <>
         <Head>
-            <title>{post.title}</title>
+            <title>World of Nabeeda | {post.title}</title>
             <meta name="description" content={post.description}/>
             <meta name="keywords" content={post.keywords} />
         </Head>
