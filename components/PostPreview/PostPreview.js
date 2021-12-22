@@ -20,7 +20,7 @@ export default function PostPreview({post}) {
                             <p>By <Link href="https://twitter.com/worldofnabeeda"><a className="authorName">Nabeeda Bakali</a></Link></p>
                         </div>
                         <p className="postDescription">{post.description}</p>
-                        <Link href={`/posts/${post.id}`} passHref>  
+                        <Link href={`posts/${post.title}`} passHref>  
                             <button className="readMoreButton">Read More</button>
                         </Link>
                     </div>

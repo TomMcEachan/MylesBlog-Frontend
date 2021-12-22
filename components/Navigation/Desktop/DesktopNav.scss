@@ -39,6 +39,16 @@
         transition: 2ms;  
         width: 35%;
         height: 35%;
+        display: inline-block;
+        margin-left: none;
+        margin-right: none;
+        background-position: none;
+        box-shadow: none;
+    
+        &:hover{
+            box-shadow: none;
+            transition: none;
+        }
     }
 
 }
@@ -51,7 +61,7 @@
             display: none;
         }
 
-        img {
+        .navLogo {
             display: none;
         }
     }
@@ -62,6 +72,7 @@
 
     .navLogo{
         overflow: hidden;
+        display: none;
         cursor: pointer;
         transition: 2ms;  
         width: 50%;
