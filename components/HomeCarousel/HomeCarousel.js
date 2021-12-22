@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
-import {Paper, Button} from '@mui/material';
+import Link from 'next/link';
+
 
 
 export default function HomeCarousel({featuredPosts}) {
@@ -11,7 +13,7 @@ export default function HomeCarousel({featuredPosts}) {
         <>
            <Carousel className="carousel">
                {
-                   featured.map((feature) => <Item key={feature.id} featured={featured} />)
+                   featured.map((feature) => <Item key={feature.id} posts={feature} />)
                }
            </Carousel>
         </>
@@ -19,14 +21,20 @@ export default function HomeCarousel({featuredPosts}) {
 }
 
 
-function Item ({featured}) {
+function Item ({posts}) {
     return (
-        <Paper>
-            <h2>{featured[0].title}</h2>
-            <p>{featured[0].description}</p>
-            <Button className="CheckButton">
-                Read Blog!
-            </Button>
-        </Paper>
+        <header className="carouselHeader">
+            <img className="carouselImage" alt={posts.image[0].alternativeText} src={posts.image[0].formats.large.url} />
+            <section className="carouselLayer">
+                <h2 className="carouselTitle">{posts.title}</h2>
+                <p className="carouselAuthor">By Nabeeda Bakali</p>
+                <Link href={`${posts.categories[0].name}`} passHref>
+                    <button className="carouselCategoryButton">{posts.categories[0].name}</button>
+                </Link>
+                <Link href={`/posts/${posts.id}`} passHref>
+                    <button className="readButton">Read Blog</button>
+                </Link>
+            </section>
+       </header>
     )
 }
