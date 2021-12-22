@@ -7,7 +7,7 @@ export default function Travel ({posts, title}) {
     return (
         <>
             <Head>
-              <title>World of Nabeeda | All Posts</title>
+              <title>World of Nabeeda | Careers</title>
             </Head>
             <AllPostLists posts={posts} listTitle={title}/>
         </>
