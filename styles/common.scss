@@ -24,10 +24,23 @@ a {
     }
 }
 
+img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: transform 250ms;
+    }
+}
 
 .container {
     margin: 0 auto;
-    max-width: 85%;
+    max-width: 80%;
     padding: 0 1em;
 }

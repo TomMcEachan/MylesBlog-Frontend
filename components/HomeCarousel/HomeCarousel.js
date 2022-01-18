@@ -2,7 +2,6 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import Link from 'next/link';
-import AssignmentIcon from '@mui/icons-material/Assignment';
 
 
 
@@ -16,7 +15,6 @@ export default function HomeCarousel({featuredPosts}) {
                 interval={6000}
                 animation="fade"
                 navButtonsAlwaysVisible="true"
-                IndicatorIcon={<AssignmentIcon/>}
                 indicatorIconButtonProps={{
                     style: {
                         padding: '10px',
@@ -31,7 +29,7 @@ export default function HomeCarousel({featuredPosts}) {
                 }}
                 indicatorContainerProps={{
                     style: {
-                        marginTop: '50px', 
+                        marginTop: '10px', 
                         textAlign: "center"
                     }
                 }}
@@ -55,10 +53,10 @@ function Item ({posts}) {
             <section className="carouselLayer">
                 <h2 className="carouselTitle">{posts.title}</h2>
                 <p className="carouselAuthor">By Nabeeda Bakali</p>
-                <Link href={`${posts.categories[0].name}`} passHref>
+                <Link href={`/${posts.categories[0].name}`} passHref>
                     <button className="carouselCategoryButton">{posts.categories[0].name}</button>
                 </Link>
-                <Link href={`/posts/${posts.id}`} passHref>
+                <Link href={`/posts/${posts.title}`} passHref>
                     <button className="readButton">Read Blog</button>
                 </Link>
             </section>
