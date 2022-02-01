@@ -1,14 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import axios from 'axios';
-import MarkdownIt from 'markdown-it';
 import Head from 'next/head';
 const {URL} = require('url');
+import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 
 export default function PostPage({post}) {
 
-    const md = new MarkdownIt();
-    const htmlContent = md.render(post[0].content);
+   
+    const htmlContent = post[0].content;
     
 
     return (
@@ -18,15 +19,22 @@ export default function PostPage({post}) {
             <meta name="description" content={post.description}/>
             <meta name="keywords" content={post.keywords} />
         </Head>
+        <div className="categoryBoxSmallPost">
+            <Link href={`/${post[0].categories[0].name}`} passHref>
+                <button className="categorySmallPost">{post[0].categories[0].name}</button>
+            </Link>
+        </div>
+        <main>
             <article>
                 <header>
                     <h1 className="blogTitle">{post[0].title}</h1>
+                    <h3 className="authorNameBlog">Nabeeda Bakali</h3>
                     <h2 className="blogDescription">{post[0].description}</h2>
-                    <h3 className="blogCategory">{post[0].category}</h3>
                     <img className="blogHeroImage" src={post[0].image[0].formats.medium.url} alt="placeholder" />
                 </header>
-                <section dangerouslySetInnerHTML={{__html: htmlContent}}></section>
+                <ReactMarkdown>{htmlContent}</ReactMarkdown>
             </article>
+        </main>
     </div>
     )
 }

@@ -16,9 +16,9 @@ export default function CategoryPreviewGrid({data}) {
                                 </Link>
                                 <div className="categoryBoxSmall">
                                     <Link href={`/${data.name}`} passHref>
-                                        <button className="categorySmall">{data.name}</button>
+                                        <button className="category">{data.name}</button>
                                     </Link>
-                            </div>
+                                </div>
                             <div className="postPreviewContentSmall">
                                 <h3 className="titleSmall">{data.posts[0].title}</h3>
                             </div>
