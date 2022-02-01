@@ -27,7 +27,8 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/in/tommceachan/?originalSubdomain=uk" target="_blank" rel="noreferrer">
+                    <a href="https://www.tommceachan.co.uk" target="_blank" rel="noreferrer">
+
                         <p>Designed by Tom McEachan in Glasgow, Scotland</p>
                     </a>
                 </div>
