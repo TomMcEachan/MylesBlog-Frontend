@@ -32,7 +32,7 @@ export default function PostPage({post, featuredPosts}) {
                     <img className="blogHeroImage" src={post[0].image[0].formats.medium.url} alt="placeholder" />
                 </header>
                 <main className="blogContentContainer">
-                     <ReactMarkdown>{htmlContent}</ReactMarkdown>
+                     <ReactMarkdown>{htmlContent}</ReactMarkdown>  
                     <div className="featuredPostsBlog">
                         <h3>Featured Posts</h3>
                             <Grid container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>

@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer';
 import axios from 'axios';
 import Head from "next/head";
 import '../styles/index.scss';
-
+import Script from 'next/script';
 
 axios.defaults.baseURL= "https://worldofnabeeda-strapi.herokuapp.com";
 
@@ -31,6 +31,7 @@ export default function MyApp({ Component, pageProps, latestPosts}) {
     <div>
       <Component {...pageProps}/>
     </div>
+    <Script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61f968fb53610790"></Script>
     <Footer />
   </div>
   )
