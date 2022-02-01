@@ -1,32 +1,33 @@
 {
-  "name": "worldofnabeeda-frontend",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.6.0",
-    "@emotion/styled": "^11.6.0",
-    "@mui/material": "^5.2.0",
-    "axios": "^0.24.0",
-    "markdown-it": "^12.2.0",
-    "next": "^12.0.7",
-    "qs": "^6.10.2",
-    "react": "17.0.2",
-    "react-burger-menu": "^3.0.6",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "react-markdown": "^8.0.0",
-    "react-material-ui-carousel": "^3.1.1",
-    "react-player": "^2.9.0",
-    "react-share": "^4.4.0",
-    "sass": "^1.43.4"
-  },
-  "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "12.0.4"
+    "name": "worldofnabeeda-frontend",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@emotion/react": "^11.6.0",
+      "@emotion/styled": "^11.6.0",
+      "@mui/material": "^5.2.0",
+      "axios": "^0.24.0",
+      "markdown-it": "^12.2.0",
+      "next": "^12.0.7",
+      "qs": "^6.10.2",
+      "react": "17.0.2",
+      "react-burger-menu": "^3.0.6",
+      "react-dom": "17.0.2",
+      "react-icons": "^4.3.1",
+      "react-markdown": "^8.0.0",
+      "react-material-ui-carousel": "^3.1.1",
+      "react-player": "^2.9.0",
+      "react-share": "^4.4.0",
+      "sass": "^1.43.4"
+    },
+    "devDependencies": {
+      "eslint": "7.32.0",
+      "eslint-config-next": "12.0.4"
+    }
   }
-}
+
