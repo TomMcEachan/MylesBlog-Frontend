@@ -28,6 +28,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <a href="https://www.tommceachan.co.uk" target="_blank" rel="noreferrer">
+
                         <p>Designed by Tom McEachan in Glasgow, Scotland</p>
                     </a>
                 </div>

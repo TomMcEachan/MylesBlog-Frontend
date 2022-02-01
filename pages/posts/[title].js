@@ -10,8 +10,6 @@ export default function PostPage({post}) {
 
    
     const htmlContent = post[0].content;
-    
-
     return (
     <div className="container">
         <Head>
@@ -35,6 +33,7 @@ export default function PostPage({post}) {
                 <ReactMarkdown>{htmlContent}</ReactMarkdown>
             </article>
         </main>
+
     </div>
     )
 }
