@@ -9,7 +9,7 @@ export default function PostPreview({post}) {
             <>
                 <div className="postPreview">
                     <Link href={`posts/${post.title}`} passHref>  
-                        <img alt={post.image.caption} src={post.image[0].formats.medium.url} className="previewImage" />
+                        <img alt={post.image[0].caption} src={post.image[0].formats.medium.url} className="previewImage" />
                     </Link>
                     <div className="categoryBox">
                             <Link href={`/${post.categories[0].name}`} passHref>
