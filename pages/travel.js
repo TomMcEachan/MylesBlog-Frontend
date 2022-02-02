@@ -2,12 +2,10 @@ import axios from 'axios';
 import PagePreview from '../components/PagePreview/PagePreview';
 import Head from 'next/head';
 import Grid from '@mui/material/Grid';
-import Item from '@mui/material/Grid';
+
 
 
 export default function Travel ({posts, title}) {
-
-  console.log(posts)
     return (
         <>
          <Head>

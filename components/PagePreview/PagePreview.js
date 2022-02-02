@@ -5,7 +5,6 @@ import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 
 export default function PagePreviewTravel({posts}) {
-console.log(posts)
 return( 
     <>
         <Grid item xs={12} md={6} xl={4}>
