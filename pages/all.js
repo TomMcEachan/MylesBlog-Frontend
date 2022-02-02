@@ -1,5 +1,4 @@
 import React from 'react'
-import AllPostLists from '../components/PostLists/PostLists'
 import axios from 'axios';
 import Head from 'next/head';
 
@@ -9,7 +8,8 @@ export default function Posts({posts, title}) {
             <Head>
               <title>World of Nabeeda | All Posts</title>
             </Head>
-            <AllPostLists className="categoryPosts" posts= {posts} listTitle={title}/>
+            <div className="container">
+            </div>
         </>
 
     )

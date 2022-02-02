@@ -1,5 +1,5 @@
 import axios from 'axios';
-import AllPostLists from '../components/PostLists/PostLists';
+
 import Head from 'next/head';
 
 export default function Travel ({posts, title}) {
@@ -9,7 +9,10 @@ export default function Travel ({posts, title}) {
             <Head>
               <title>World of Nabeeda | Careers</title>
             </Head>
-            <AllPostLists className="categoryPage" posts={posts} listTitle={title}/>
+            <div className="container">
+             
+            </div>
+            
         </>
     )
 }
