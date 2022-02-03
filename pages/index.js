@@ -31,7 +31,7 @@ export async function getStaticProps() {
   //This queries the CMS for all the posts that fall under the 'travel' category 
 
   const lifestylePostRes = await axios.get("/categories?name=lifestyle");
-  
+
   //Returns data from api as a prop to be use in component
   return {
     props: {
