@@ -16,7 +16,7 @@ return(
                     <div className="postPreviewContentSmall">
                         <h3 className="titleSmall">{posts.title}</h3>
                         <div className="previewAuthor">
-                            <p>By <Link href="https://twitter.com/worldofnabeeda"><a className="authorName">Nabeeda Bakali</a></Link></p>
+                            <p>By <Link href="https://twitter.com/worldofnabeeda"><a className="authorName">Myles McEachan</a></Link></p>
                         </div>
                         <p className="postDescription">{posts.description}</p>
                         <Link href={`posts/${posts.pagetitle}`} passHref>  

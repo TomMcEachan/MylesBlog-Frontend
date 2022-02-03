@@ -8,7 +8,6 @@ import Link from 'next/link';
 export default function HomeCarousel({featuredPosts}) {
 
     const featured =featuredPosts.slice(0, 4);
-   
 
     return (
         <>
@@ -24,7 +23,7 @@ export default function HomeCarousel({featuredPosts}) {
                 }}
                 activeIndicatorIconButtonProps={{
                     style: {
-                        backgroundColor: 'pink',
+                        backgroundColor: '#FDA300',
                         color: 'white'
                     }
                 }}
