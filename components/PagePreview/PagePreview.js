@@ -10,7 +10,7 @@ return(
         <Grid item xs={12} md={6} xl={4}>
             <Item>
                 <div className="desktopContainer">
-                    <Link href={`/posts/${posts.title}`} passHref> 
+                    <Link href={`/posts/${posts.pagetitle}`} passHref> 
                         <a><img alt={posts.image[0].caption} src={posts.image[0].formats.medium.url} className="previewImageSmall" /> </a> 
                     </Link>
                     <div className="postPreviewContentSmall">
@@ -19,7 +19,7 @@ return(
                             <p>By <Link href="https://twitter.com/worldofnabeeda"><a className="authorName">Nabeeda Bakali</a></Link></p>
                         </div>
                         <p className="postDescription">{posts.description}</p>
-                        <Link href={`posts/${posts.title}`} passHref>  
+                        <Link href={`posts/${posts.pagetitle}`} passHref>  
                             <button className="readMoreButton">Read More</button>
                         </Link>
                     </div>                 

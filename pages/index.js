@@ -28,7 +28,7 @@ export async function getStaticProps() {
   const featuredPostRes = await axios.get("/posts?featured=true")
 
   //This queries the CMS for all the posts that fall under the 'travel' category 
-  const travelPostRes = await axios.get("/categories?name=travel");
+  const travelPostRes = await axios.get("/categories?name=games");
   
   
   //Returns data from api as a prop to be use in component

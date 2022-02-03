@@ -7,16 +7,16 @@ import Head from "next/head";
 import '../styles/index.scss';
 import Script from 'next/script';
 
-axios.defaults.baseURL= "https://worldofnabeeda-strapi.herokuapp.com";
+axios.defaults.baseURL= "https://mylesmceachan-blog-cms.herokuapp.com";
 
 //Returns the App to the Browser
-export default function MyApp({ Component, pageProps, latestPosts}) {
+export default function MyApp({ Component, pageProps}) {
 
   return (
   <div className="app">
     <Head>
-      <title>World of Nabeeda</title>
-      <meta name="description" content="World of Nabeeda Blog" />
+      <title>Myles McEachan - Blog </title>
+      <meta name="description" content="Tom McEachan Blog" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />    
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
