@@ -8,6 +8,7 @@ import Link from 'next/link';
 export default function HomeCarousel({featuredPosts}) {
 
     const featured =featuredPosts.slice(0, 4);
+   
 
     return (
         <>
@@ -52,7 +53,7 @@ function Item ({posts}) {
             <img className="carouselImage" alt={posts.image[0].alternativeText} src={posts.image[0].formats.large.url} />
             <section className="carouselLayer">
                 <h2 className="carouselTitle">{posts.title}</h2>
-                <p className="carouselAuthor">By Nabeeda Bakali</p>
+                <p className="carouselAuthor">Myles McEachan</p>
                 <Link href={`/${posts.categories[0].name}`} passHref>
                     <button className="carouselCategoryButton">{posts.categories[0].name}</button>
                 </Link>

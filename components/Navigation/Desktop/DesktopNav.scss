@@ -1,13 +1,23 @@
 .navBar {
-    padding: 1em 0;
+    padding: 0em 0em;
+    position: sticky;
+
+    .imageContainer {
+       
+        padding: unset;
+    }
+
+    .linkContainer{
+        margin-left: 0em;
+    }
 
     .navContainer{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        max-width: 80%;
-        padding: 0 1em;
+        max-width: 90%;
+        padding: 0em 0em;
     }
 
     ul{
@@ -24,12 +34,12 @@
 
     .menuLink{
             color: black;
-            padding: 0 1em;
+            padding: 0 9px;
             font-weight: bold;
             
             &:hover{
                 text-decoration: none;
-                color:#FBD3E5;
+                color:#FDA300;
             }   
     }
 

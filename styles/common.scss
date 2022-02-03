@@ -20,7 +20,7 @@ a {
     }
 
     &:focus{
-        outline: 3px solid #ffc0cb;
+        outline: 3px solid #FDA300;
     }
 }
 
@@ -43,4 +43,29 @@ img {
     margin: 0 auto;
     max-width: 80%;
     padding: 0 1em;
+}
+
+.authorName{
+    color: #FDA300;
+    text-decoration: none;
+    margin-top: 0.1em;
+}
+
+.readMoreButton{
+    color: black;
+    border-color: #FDA300;
+    padding: .5em 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: .7em;
+    font-size: medium;
+    font-weight: bold;
+    background: inherit;
+
+
+    &:hover{
+        color: black;
+        border-color: #1f4762;
+    }
 }

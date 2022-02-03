@@ -16,7 +16,6 @@ export default function HomeLatestPosts({allPosts, featuredPosts}) {
         });
     }
 
-
     //This a Grid Container with two columns on articles
     return (
         <>
