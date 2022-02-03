@@ -3,7 +3,8 @@ import Grid from '@mui/material/Grid';
 import Head from 'next/head';
 import PagePreview from '../components/PagePreview/PagePreview';
 
-export default function Posts({posts, title}) {
+export default function Culture ({posts, title}) {
+
     return (
       <>
       <Head>
@@ -12,7 +13,7 @@ export default function Posts({posts, title}) {
        <main>
          <div className="container">
              <h2 className="categoryPageTitle">{title}</h2>
-             <p className="categoryDescriptor">All of my blogs from over the years...</p>
+             <p className="categoryDescriptor">My {title} blogs from over the years...</p>
              <hr className="separator"/>
              <Grid container spacing={4}>
                {posts.map((post) => (
@@ -22,19 +23,17 @@ export default function Posts({posts, title}) {
          </div>
        </main>
      </>
-
     )
 }
 
-
 export async function getStaticProps() {
-
-    const postsRes = await axios.get("/posts")
-  
+    const response = await axios.get("/categories?name=culture");
+    const lifestylePosts = response.data[0].posts;
+    
     return {
       props: {
-        posts: postsRes.data, 
-        title: "All Posts"
+        posts: lifestylePosts,
+        title: "Culture"
       }
     }
 }

@@ -3,12 +3,12 @@ import Grid from '@mui/material/Grid';
 import Head from 'next/head';
 import PagePreview from '../components/PagePreview/PagePreview';
 
-export default function Travel ({posts, title}) {
+export default function Lifestyle ({posts, title}) {
 
     return (
       <>
       <Head>
-         <title>World of Nabeeda | {title} </title>
+         <title> Myles McEachan - Blog  | {title} </title>
        </Head>
        <main>
          <div className="container">
@@ -28,11 +28,11 @@ export default function Travel ({posts, title}) {
 
 export async function getStaticProps() {
     const response = await axios.get("/categories?name=lifestyle");
-    const lifestylePosts = response.data[0].posts;
-    
+    const careerPosts = response.data[0].posts;
+  
     return {
       props: {
-        posts: lifestylePosts,
+        posts: careerPosts,
         title: "Lifestyle"
       }
     }
