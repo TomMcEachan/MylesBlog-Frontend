@@ -8,7 +8,6 @@ import '../styles/index.scss';
 import Script from 'next/script';
 
 axios.defaults.baseURL= "https://mylesmceachan-blog-cms.herokuapp.com";
-
 //Returns the App to the Browser
 export default function MyApp({ Component, pageProps}) {
 
