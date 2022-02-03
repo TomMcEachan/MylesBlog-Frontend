@@ -1,7 +1,7 @@
 .navBar {
     padding: 0em 0em;
     position: sticky;
-
+    background-color: #4085b3;
     .imageContainer {
        
         padding: unset;
@@ -24,7 +24,7 @@
         margin: unset;
         padding: unset;
         list-style: none;
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     
@@ -33,7 +33,7 @@
     }
 
     .menuLink{
-            color: black;
+            color: white    ;
             padding: 0 9px;
             font-weight: bold;
             

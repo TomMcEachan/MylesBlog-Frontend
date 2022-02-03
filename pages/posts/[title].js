@@ -15,9 +15,9 @@ export default function PostPage({post, featuredPosts}) {
     return (
     <div className="container">
         <Head>
-            <title>Myles McEachan - Blog| {post.title}</title>
-            <meta name="description" content={post.description}/>
-            <meta name="keywords" content={post.keywords} />
+            <title>Myles McEachan | {post[0].title}</title>
+            <meta name="description" content={post[0].description}/>
+            <meta name="keywords" content={post[0].keywords} />
         </Head>
         <div className="categoryBoxSmallPost">
             <Link href={`/${post[0].categories[0].name}`} passHref>
