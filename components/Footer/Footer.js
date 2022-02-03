@@ -32,7 +32,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <div className="copyright">
-                    <p>© 2022 NABEEDA BAKALI</p>
+                    <p>© 2022 MYLES MCEACHAN</p>
                 </div>
             </footer>
         </>

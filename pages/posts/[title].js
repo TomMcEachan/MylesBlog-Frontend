@@ -15,11 +15,11 @@ export default function PostPage({post, featuredPosts}) {
     return (
     <div className="container">
         <Head>
-            <title>World of Nabeeda | {post.title}</title>
+            <title>Myles McEachan - Blog| {post.title}</title>
             <meta name="description" content={post.description}/>
             <meta name="keywords" content={post.keywords} />
         </Head>
-        <div className="categoryBoxSmall">
+        <div className="categoryBoxSmallPost">
             <Link href={`/${post[0].categories[0].name}`} passHref>
                 <button className="categoryBoxSmallBlog">{post[0].categories[0].name}</button>
             </Link>
@@ -62,22 +62,22 @@ export default function PostPage({post, featuredPosts}) {
                                 <Grid item xs={4}>
                                      <Item>
                                         <div className="postPreview">
-                                        <Link href={`/posts/${featuredPosts[1].title}`} passHref> 
+                                        <Link href={`/posts/${featuredPosts[0].title}`} passHref> 
                                         <a>
                                             <img 
-                                            alt={featuredPosts[1].image[0].caption} 
-                                            src={featuredPosts[1].image[0].formats.medium.url} 
+                                            alt={featuredPosts[0].image[0].caption} 
+                                            src={featuredPosts[0].image[0].formats.medium.url} 
                                             className="previewImageSmall" 
                                             /> 
                                         </a> 
                                         </Link>
                                         <div className="categoryBoxSmall">
-                                            <Link href={`/${featuredPosts[1].name}`} passHref>
-                                                <button className="category">{featuredPosts[1].name}</button>
+                                            <Link href={`/${featuredPosts[0].name}`} passHref>
+                                                <button className="category">{featuredPosts[0].name}</button>
                                             </Link>
                                         </div>
                                         <div className="postPreviewContentSmall">
-                                        <h3 className="titleSmall">{featuredPosts[1].title}</h3>
+                                        <h3 className="titleSmall">{featuredPosts[0].title}</h3>
                                         </div>
                                         </div>
                                     </Item>
@@ -85,22 +85,22 @@ export default function PostPage({post, featuredPosts}) {
                                 <Grid item xs={4}>
                                      <Item>
                                         <div className="postPreview">
-                                        <Link href={`/posts/${featuredPosts[2].title}`} passHref> 
+                                        <Link href={`/posts/${featuredPosts[0].title}`} passHref> 
                                         <a>
                                             <img 
-                                            alt={featuredPosts[2].image[0].caption} 
-                                            src={featuredPosts[2].image[0].formats.medium.url} 
+                                            alt={featuredPosts[0].image[0].caption} 
+                                            src={featuredPosts[0].image[0].formats.medium.url} 
                                             className="previewImageSmall" 
                                             /> 
                                         </a> 
                                         </Link>
                                         <div className="categoryBoxSmall">
-                                            <Link href={`/${featuredPosts[2].name}`} passHref>
-                                                <button className="category">{featuredPosts[2].name}</button>
+                                            <Link href={`/${featuredPosts[0].name}`} passHref>
+                                                <button className="category">{featuredPosts[0].name}</button>
                                             </Link>
                                         </div>
                                         <div className="postPreviewContentSmall">
-                                        <h3 className="titleSmall">{featuredPosts[2].title}</h3>
+                                        <h3 className="titleSmall">{featuredPosts[0].title}</h3>
                                         </div>
                                         </div>
                                     </Item>

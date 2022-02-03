@@ -1,26 +1,38 @@
 import axios from 'axios';
-import AllPostLists from '../components/AllPostsList/AllPostLists';
+import Grid from '@mui/material/Grid';
 import Head from 'next/head';
+import PagePreview from '../components/PagePreview/PagePreview';
 
-export default function Travel ({posts, title}) {
+export default function Lifestyle ({posts, title}) {
 
     return (
-        <>
-          <Head>
-            <title>World of Nabeeda | Lifestyle </title>
-          </Head>
-          <AllPostLists posts={posts} listTitle={title}/>
-        </>
+      <>
+      <Head>
+         <title> Myles McEachan - Blog  | {title} </title>
+       </Head>
+       <main>
+         <div className="container">
+             <h2 className="categoryPageTitle">{title}</h2>
+             <p className="categoryDescriptor">My {title} blogs from over the years...</p>
+             <hr className="separator"/>
+             <Grid container spacing={4}>
+               {posts.map((post) => (
+                 <PagePreview posts={post} key={post} /> 
+               ))}       
+             </Grid>
+         </div>
+       </main>
+     </>
     )
 }
 
 export async function getStaticProps() {
     const response = await axios.get("/categories?name=lifestyle");
-    const lifestylePosts = response.data[0].posts;
-    
+    const careerPosts = response.data[0].posts;
+  
     return {
       props: {
-        posts: lifestylePosts,
+        posts: careerPosts,
         title: "Lifestyle"
       }
     }
