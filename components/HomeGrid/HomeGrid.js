@@ -3,12 +3,11 @@ import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 import CategoryPreviewHero from '../CategoryPreview/CategoryPreviewHero';
 import CategoryPreviewGrid from '../CategoryPreview/CategoryPreviewGrid';
-import VideoPlayer from '../VideoPlayer/VideoPlayer';
 
-export default function HomeGrid({travelPosts}) {
+export default function HomeGrid({lifestylePosts}) {
 
-    const heroPost = travelPosts.slice(0, 1);
-    const additionalPosts = travelPosts.slice(0, 4);
+    const heroPost = lifestylePosts.slice(0, 1);
+    const additionalPosts = lifestylePosts.slice(0, 4);
     
     //This function renders the HeroPost component for the category with the data queries from the Strapi Database.
     function renderPreviews(type) {
@@ -26,7 +25,7 @@ export default function HomeGrid({travelPosts}) {
 
     return (
             <div className="careerContainer">
-                <h3 className="categoryTitle">Travel</h3>
+                <h3 className="categoryTitle">Lifestyle</h3>
                 <hr className="separator"/>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>

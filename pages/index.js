@@ -5,14 +5,14 @@ import HomeGrid from '../components/HomeGrid/HomeGrid';
 
 
 //This is what is displayed 
-export default function Home({allPosts, featuredPosts, travelPosts}) {
+export default function Home({allPosts, featuredPosts, lifestylePosts}) {
 
   return (
     <>
       <HomeHeader featuredPosts={featuredPosts}/>
       <div className="container">
         <HomeLatestPosts allPosts={allPosts} featuredPosts={featuredPosts}/>
-        <HomeGrid travelPosts={travelPosts}/>
+        <HomeGrid lifestylePosts={lifestylePosts}/>
      </div>
     </>
   )
@@ -29,7 +29,7 @@ export async function getStaticProps() {
   const featuredPostRes = await axios.get("/posts?featured=true")
 
   //This queries the CMS for all the posts that fall under the 'travel' category 
-  const travelPostRes = await axios.get("/categories?name=games");
+  const lifestylePostRes = await axios.get("/categories?name=lifestyle");
   
   
   //Returns data from api as a prop to be use in component
@@ -37,7 +37,7 @@ export async function getStaticProps() {
     props: {
       allPosts: allPostsRes.data,
       featuredPosts: featuredPostRes.data,
-      travelPosts: travelPostRes.data
+      lifestylePosts: lifestylePostRes.data
     }
   }
 } 
