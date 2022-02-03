@@ -1,32 +1,7 @@
 .topBar{
     
-    background-color: black;
-    
-    .latestContainer{
-        justify-content: space-between;
-        display: flex;
+    background-color: #1f4762;
 
-        p{
-            margin-left: 1em;
-            color: white;
-        }
-
-        .latestBox{
-            background-color: pink;
-            padding: 0 1em;
-            color: white;
-            font-weight: bolder;
-        }
-
-        .latestBoxPost {
-            transition: .5s;
-            cursor: pointer;
-            &:hover{
-                color: #50D0E8;
-            }
-        }
-        
-    }
 
     ul{
         margin: unset;
@@ -37,12 +12,12 @@
 
     .socialContainer {
         .socialLink {
-        color: #50D0E8;
+        color: #FDA300;
         margin:  .5em;
         cursor: pointer;
 
         &:hover{
-            color: pink;
+            color: white;
         }
         
         }
