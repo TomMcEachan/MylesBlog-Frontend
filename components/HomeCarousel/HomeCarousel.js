@@ -24,7 +24,7 @@ export default function HomeCarousel({featuredPosts}) {
                 }}
                 activeIndicatorIconButtonProps={{
                     style: {
-                        backgroundColor: 'pink',
+                        backgroundColor: '#FDA300',
                         color: 'white'
                     }
                 }}
