@@ -20,7 +20,7 @@ a {
     }
 
     &:focus{
-        outline: 3px solid #ffc0cb;
+        outline: 3px solid #FDA300;
     }
 }
 
@@ -46,14 +46,14 @@ img {
 }
 
 .authorName{
-    color: pink;
+    color: #FDA300;
     text-decoration: none;
     margin-top: 0.1em;
 }
 
 .readMoreButton{
     color: black;
-    border-color: pink;
+    border-color: #FDA300;
     padding: .5em 0;
     border-left: none;
     border-right: none;
@@ -66,6 +66,6 @@ img {
 
     &:hover{
         color: black;
-        border-color: #50D0E8;
+        border-color: #1f4762;
     }
 }

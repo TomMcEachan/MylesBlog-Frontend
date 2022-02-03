@@ -2,9 +2,9 @@
 import React from 'react'
 import Link from 'next/link';
 
+    
 export default function DesktopNav() {
 
-    
     return (
         <nav className="navBar">
             <div className="navContainer">
@@ -15,6 +15,7 @@ export default function DesktopNav() {
                                 src="https://res.cloudinary.com/tommceachan/image/upload/v1643881203/m_2_Photo_Room_9ed5a2a190.png"/>
                     </div>
                 </Link>
+                <div className="linkContainer">
                 <ul>
                     <li>
                         <Link href="/culture" passHref>
@@ -34,6 +35,7 @@ export default function DesktopNav() {
                         </Link>
                     </li>
                 </ul>
+                </div>
                 </div>
         </nav>  
     )
