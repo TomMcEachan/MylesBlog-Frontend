@@ -6,9 +6,8 @@ import CategoryPreviewGrid from '../CategoryPreview/CategoryPreviewGrid';
 
 export default function HomeGrid({lifestylePosts}) {
 
-    const heroPost = lifestylePosts.slice(0, 1);
-    const additionalPosts = lifestylePosts.slice(0, 4);
-    
+    const heroPost = lifestylePosts.slice(0);
+    const additionalPosts =lifestylePosts.slice(0)
     //This function renders the HeroPost component for the category with the data queries from the Strapi Database.
     function renderPreviews(type) {
         return type.map((post) => {
