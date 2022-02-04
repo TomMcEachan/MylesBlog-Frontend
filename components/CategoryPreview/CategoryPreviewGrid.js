@@ -11,8 +11,8 @@ export default function CategoryPreviewGrid({data}) {
                 <Grid item xs={6}>
                     <Item>
                         <div className="postPreview">
-                                <Link href={`/posts/${data.posts[0].title}`} passHref> 
-                                   <a><img alt={data.posts[0].image[0].caption} src={data.posts[0].image[0].formats.medium.url} className="previewImageSmall" /> </a> 
+                                <Link href={`/posts/${data.posts[1].title}`} passHref> 
+                                   <a><img alt={data.posts[1].image[0].caption} src={data.posts[1].image[0].formats.medium.url} className="previewImageSmall" /> </a> 
                                 </Link>
                                 <div className="categoryBoxSmall">
                                     <Link href={`/${data.name}`} passHref>
@@ -20,7 +20,7 @@ export default function CategoryPreviewGrid({data}) {
                                     </Link>
                                 </div>
                             <div className="postPreviewContentSmall">
-                                <h3 className="titleSmall">{data.posts[0].title}</h3>
+                                <h3 className="titleSmall">{data.posts[1].title}</h3>
                             </div>
                         </div>
                     </Item>
@@ -28,55 +28,55 @@ export default function CategoryPreviewGrid({data}) {
                 <Grid item xs={6}>
                     <Item>
                         <div className="postPreview">
-                        <Link href={`/posts/${data.posts[1].title}`} passHref>
-                            <a><img alt={data.posts[1].image[0].caption} src={data.posts[1].image[0].formats.medium.url} className="previewImageSmall" /> </a> 
-                        </Link>
-                        <div className="categoryBoxSmall">
-                                <Link href={`/${data.name}`} passHref>
-                                    <button className="categorySmall">{data.name}</button>
+                                <Link href={`/posts/${data.posts[2].title}`} passHref> 
+                                   <a><img alt={data.posts[2].image[0].caption} src={data.posts[2].image[0].formats.medium.url} className="previewImageSmall" /> </a> 
                                 </Link>
-                                </div>
-                        <div className="postPreviewContentSmall">
-                                    <h3 className="titleSmall">{data.posts[1].title}</h3>
-                            </div>
-                        </div>
-                    </Item>
-                </Grid>
-                <Grid item xs={6}>
-                    <Item>
-                        <div className="postPreview">
-                            <Link href={`/posts/${data.posts[2].title}`} passHref>
-                                <a><img alt={data.posts[2].image[0].caption} src={data.posts[2].image[0].formats.medium.url} className="previewImageSmall" /> </a>
-                            </Link>
-                            <div className="categoryBoxSmall">
-                                    <Link href={`/${data.name}`} passHref>
-                                        <button className="categorySmall">{data.name}</button>
-                                    </Link>
-                            </div>
-                            <div className="postPreviewContentSmall">
-                                    <h3 className="titleSmall">{data.posts[2].title}</h3>
-                            </div>
-                        </div>
-                    </Item>
-                </Grid>
-                <Grid item xs={6}>
-                    <Item>
-                        <div className="postPreview">
-                        <Link href={`/posts/${data.posts[3].title}`} passHref>  
-                            <a><img alt={data.posts[3].image[0].caption} src={data.posts[3].image[0].formats.medium.url} className="previewImageSmall" /> </a>              
-                        </Link>
                                 <div className="categoryBoxSmall">
                                     <Link href={`/${data.name}`} passHref>
-                                        <button className="categorySmall">{data.name}</button>
+                                        <button className="category">{data.name}</button>
                                     </Link>
                                 </div>
-                            <div className="postPreviewContent">
-                                    <h3 className="titleSmall">{data.posts[3].title}</h3>
+                            <div className="postPreviewContentSmall">
+                                <h3 className="titleSmall">{data.posts[2].title}</h3>
                             </div>
                         </div>
                     </Item>
                 </Grid>
-            </Grid>       
+                <Grid item xs={6}>
+                    <Item>
+                        <div className="postPreview">
+                                <Link href={`/posts/${data.posts[3].title}`} passHref> 
+                                   <a><img alt={data.posts[3].image[0].caption} src={data.posts[3].image[0].formats.medium.url} className="previewImageSmall" /> </a> 
+                                </Link>
+                                <div className="categoryBoxSmall">
+                                    <Link href={`/${data.name}`} passHref>
+                                        <button className="category">{data.name}</button>
+                                    </Link>
+                                </div>
+                            <div className="postPreviewContentSmall">
+                                <h3 className="titleSmall">{data.posts[3].title}</h3>
+                            </div>
+                        </div>
+                    </Item>
+                </Grid>
+                <Grid item xs={6}>
+                    <Item>
+                        <div className="postPreview">
+                                <Link href={`/posts/${data.posts[4].title}`} passHref> 
+                                   <a><img alt={data.posts[4].image[0].caption} src={data.posts[4].image[0].formats.medium.url} className="previewImageSmall" /> </a> 
+                                </Link>
+                                <div className="categoryBoxSmall">
+                                    <Link href={`/${data.name}`} passHref>
+                                        <button className="category">{data.name}</button>
+                                    </Link>
+                                </div>
+                            <div className="postPreviewContentSmall">
+                                <h3 className="titleSmall">{data.posts[4].title}</h3>
+                            </div>
+                        </div>
+                    </Item>
+                </Grid>
+            </Grid>      
         </div>
     )
 }

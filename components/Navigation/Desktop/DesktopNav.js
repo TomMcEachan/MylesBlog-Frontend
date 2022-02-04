@@ -31,7 +31,7 @@ export default function DesktopNav() {
                             <a className="menuLink">Arts &amp; Literature</a>
                         </Link>
                         <Link href="/all" passHref>
-                            <a className="menuLink">All</a>
+                            <a className="menuLinkLast">All</a>
                         </Link>
                     </li>
                 </ul>

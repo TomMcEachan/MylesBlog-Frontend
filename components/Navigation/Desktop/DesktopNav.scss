@@ -36,11 +36,25 @@
             color: white    ;
             padding: 0 9px;
             font-weight: bold;
+            border-right: 5px solid;
             
             &:hover{
                 text-decoration: none;
                 color:#FDA300;
+                border-right: 5px solid white;
             }   
+    }
+
+    .menuLinkLast{
+
+        color: white    ;
+            padding: 0 9px;
+            font-weight: bold;
+        
+            &:hover{
+                text-decoration: none;
+                color:#FDA300;
+            }    
     }
 
     .navLogo{
