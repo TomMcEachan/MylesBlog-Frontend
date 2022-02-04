@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 
 
 export default function Posts({posts, title}) {
-  
+ 
   //This function shuffles the api request response
   function shufflePosts(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -33,7 +33,7 @@ export default function Posts({posts, title}) {
              <hr className="separator"/>
              <Grid container spacing={4}>
                {posts.map((post) => (
-                 <PagePreview posts={post} key={post} /> 
+                 <PagePreview posts={post} key={post.id} /> 
                ))}       
              </Grid>
          </div>
