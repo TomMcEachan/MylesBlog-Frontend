@@ -103,3 +103,22 @@
         height: 50%;
     }
 }
+
+
+@media screen and (max-width: 1512px) {
+
+    .navBar{
+        ul{
+            font-size: x-large;
+        }
+    }
+}
+
+@media screen and (max-width: 1306px) {
+
+    .navBar{
+        ul{
+            font-size: large;
+        }
+    }
+}

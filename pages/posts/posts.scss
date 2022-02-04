@@ -38,8 +38,8 @@
 
 .blogContentContainer{
     font-size: large;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
     padding-bottom: 3em;
 }
 
@@ -51,7 +51,31 @@
 
     .featuredPostsBlog{
         display: none;
-        
+    }
+
+    img{
+        width: 95%;
+        height: 70%;
+    }
+
+    .blogContentContainer{
+        font-size: normal;
+    }
+
+    .blogTitle{
+        font-size: xx-large;
     }
  }
+
+
+ @media  screen and (max-width: 730px) {
+
+    .blogContentContainer{
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    
+ }
+
 
