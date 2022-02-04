@@ -34,7 +34,7 @@ export default function Posts({posts, title}) {
              <hr className="separator"/>
              <Grid container spacing={4}>
                {posts.map((post) => (
-                 <PagePreview posts={post} key={post} /> 
+                 <PagePreview posts={post} key={post.id} /> 
                ))}       
              </Grid>
          </div>
