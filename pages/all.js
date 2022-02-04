@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 
 
 export default function Posts({posts, title}) {
-
+  
   //This function shuffles the api request response
   function shufflePosts(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -14,7 +14,6 @@ export default function Posts({posts, title}) {
         [array[i], array[j]] = [array[j], array[i]];
     }
   }
-
   
   //This function randomises the content upon load
   function RenderAllContentOnce(posts, title){
