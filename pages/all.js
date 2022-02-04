@@ -4,9 +4,7 @@ import Head from 'next/head';
 import PagePreview from '../components/PagePreview/PagePreview';
 import React, { useEffect } from 'react';
 
-
 export default function Posts({posts, title}) {
-
   //This function shuffles the api request response
   function shufflePosts(array) {
     for (let i = array.length - 1; i > 0; i--) {
