@@ -8,7 +8,6 @@ import Link from 'next/link';
 export default function HomeCarousel({featuredPosts}) {
 
     const featured =featuredPosts.slice(0, 4);
-   
 
     return (
         <>
