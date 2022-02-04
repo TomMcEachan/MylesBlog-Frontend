@@ -4,8 +4,19 @@ import Head from 'next/head';
 import PagePreview from '../components/PagePreview/PagePreview';
 
 export default function Posts({posts, title}) {
+
+  function shufflePosts(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+    
     return (
+     
       <>
+      
+       {shufflePosts(posts)}
       <Head>
          <title>Myles McEachan - Blog | {title} </title>
        </Head>
