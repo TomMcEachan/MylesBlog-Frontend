@@ -83,11 +83,13 @@
         }
 }
 
+@media  screen and (max-width: 1000px ){
+    .carouselTitle{
 
-@media screen and (max-width: 1280px) {
+        top: 29%;
+        left: 50%;
+        font-size: xx-large;
+        
+    }
     
-   .carousel{
-       display: none;
-   } 
-   
 }
