@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Link from 'next/link';
 import {BsInstagram, BsLinkedin} from 'react-icons/bs';
@@ -6,6 +7,11 @@ import {BsInstagram, BsLinkedin} from 'react-icons/bs';
 export default function NavLinks() {
     return (
         <div className="bm-menu">
+             <div className="imageContainer">
+                        <img    alt="logo" 
+                                className="navLogoMobile" 
+                                src="https://res.cloudinary.com/tommceachan/image/upload/v1643881203/m_2_Photo_Room_9ed5a2a190.png"/>
+                    </div>
             <ul className="bm-item-list">
                 <li>
                     <Link href="/" passHref>
