@@ -6,8 +6,11 @@ import CategoryPreviewGrid from '../CategoryPreview/CategoryPreviewGrid';
 
 export default function HomeGrid({lifestylePosts}) {
 
+    var info = lifestylePosts.flat();
     const heroPost = lifestylePosts.slice(0);
     const additionalPosts =lifestylePosts.slice(0)
+
+    console.log(info.posts)
     
     
 
