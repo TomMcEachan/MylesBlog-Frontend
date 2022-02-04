@@ -5,8 +5,7 @@ import CategoryPreviewHero from '../CategoryPreview/CategoryPreviewHero';
 import CategoryPreviewGrid from '../CategoryPreview/CategoryPreviewGrid';
 
 export default function HomeGrid({lifestylePosts}) {
-
-    
+  
     const heroPost = lifestylePosts.slice(0);
     const additionalPosts =lifestylePosts.slice(0)
 
