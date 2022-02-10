@@ -2,7 +2,7 @@ import React from 'react'
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 
-import {BsTwitter, BsFacebook, BsInstagram, BsYoutube} from 'react-icons/bs';
+import {BsLinkedin, BsInstagram} from 'react-icons/bs';
 
 export default function Footer() {
     return (
@@ -11,18 +11,12 @@ export default function Footer() {
                <div>
                     <ul>
                         <li>
-                            <a className="socialLinkContainer" href="https://twitter.com/worldofnabeeda" target="_blank" rel="noreferrer" >
-                                <BsTwitter className="socialLink" />
+                            <a className="socialLinkContainer" href="https://www.linkedin.com/in/myles-elio-mceachan-32238b210/" target="_blank" rel="noreferrer" >
+                                <BsLinkedin className="socialLink" />
                             </a>
-                            <a className="socialLinkContainer" href="https://www.facebook.com/worldofnabeeda" target="_blank" rel="noreferrer" >
-                                <BsFacebook className="socialLink" />
-                            </a>
-                            <a  className="socialLinkContainer" href="https://www.instagram.com/worldofnabeeda/?hl=en" target="_blank" rel="noreferrer">
+                            <a  className="socialLinkContainer" href="https://www.instagram.com/touristinyouth/?hl=en" target="_blank" rel="noreferrer">
                                 <BsInstagram className="socialLink" />
                             </a>
-                            <a  className="socialLinkContainer" href="https://www.youtube.com/channel/UCWPYFsoJUNmbcqazVpQMW3w" target="_blank" rel="noreferrer">
-                                <BsYoutube className="socialLink" />
-                             </a>
                         </li>
                     </ul>
                 </div>
