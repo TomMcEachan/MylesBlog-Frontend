@@ -17,7 +17,7 @@ export default function CategegoryPreviewHero({data}) {
                     <div className="postPreviewContent">
                         <h3 className="title">{data.posts[0].title}</h3>
                         <div className="author">
-                            <p>By <Link href="https://twitter.com/worldofnabeeda"><a className="authorName">Nabeeda Bakali</a></Link></p>
+                            <p>By <Link href="https://www.linkedin.com/in/myles-elio-mceachan-32238b210/"><a className="authorName">Myles McEachan</a></Link></p>
                         </div>
                         <p className="postDescription">{data.posts[0].description}</p>
                         <Link href={`/posts/${data.posts[0].title}`} passHref>  
