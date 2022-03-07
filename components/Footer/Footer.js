@@ -1,7 +1,4 @@
 import React from 'react'
-import Grid from '@mui/material/Grid';
-import Item from '@mui/material/Grid';
-
 import {BsLinkedin, BsInstagram} from 'react-icons/bs';
 
 export default function Footer() {
