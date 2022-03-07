@@ -1,16 +1,39 @@
 import DesktopNav from '../components/Navigation/Desktop/DesktopNav';
 import MobileNav from '../components/Navigation/Mobile/MobileNav';
-
 import TopBar from '../components/TopBar/TopBar';
 import Footer from '../components/Footer/Footer';
 import axios from 'axios';
 import Head from "next/head";
 import '../styles/index.scss';
 import Script from 'next/script';
+import * as ga from '../lib/ga'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { route } from 'next/dist/server/router';
 
+
+
+
+//This is the base URL for the CMS content 
 axios.defaults.baseURL= "https://mylesmceachan-blog-cms.herokuapp.com";
+
 //Returns the App to the Browser
 export default function MyApp({ Component, pageProps}) {
+
+  const router = useRouter();
+  
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url)
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange)
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
 
   return (
   <div className="app">
