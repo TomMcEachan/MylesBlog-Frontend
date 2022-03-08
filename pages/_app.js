@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { route } from 'next/dist/server/router';
 import CookieConsent from "react-cookie-consent";
-import Link from "next/Link";
+import Link from 'next/link';
 
 
 
@@ -59,7 +59,7 @@ export default function MyApp({ Component, pageProps}) {
     <CookieConsent
       location="top"
       buttonText="Sure!"
-    >This website uses cookies to enhance the user experience. <Link href="/cookies">Find out more</Link></CookieConsent>
+    >This website uses cookies to enhance the user experience. <Link href="/cookies" passHref>Find out more</Link></CookieConsent>
     <Footer />
   </div>
   )

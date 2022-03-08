@@ -1,5 +1,6 @@
 import React from 'react'
 import {BsLinkedin, BsInstagram} from 'react-icons/bs';
+import Link from 'next/link'
 
 export default function Footer() {
     return (
@@ -28,19 +29,19 @@ export default function Footer() {
                 <div className="footerLinks">
                     <ul>
                         <li>
-                            <a href="https://www.mylesmceachan.co.uk/sitemap-0.xml" target="_blank" rel="noreferrer">
+                            <Link href="https://www.mylesmceachan.co.uk/sitemap-0.xml" target="_blank" rel="noreferrer" passHref>
                                 <p>Sitemap</p>
-                            </a> 
+                            </Link> 
                         </li>
                         <li>
-                            <a href="/cookies" target="_blank" rel="noreferrer">
+                            <Link href="/cookies" target="_blank" rel="noreferrer" passHref>
                                 <p>Cookies Statement</p>
-                            </a> 
+                            </Link> 
                         </li>
                         <li>
-                            <a href="/accessibility" target="_blank" rel="noreferrer">
+                            <Link href="/accessibility" target="_blank" rel="noreferrer" passHref>
                                 <p>Accessibility Statement</p>
-                            </a> 
+                            </Link> 
                         </li>
                     </ul>     
                 </div>
