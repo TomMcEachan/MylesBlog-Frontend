@@ -10,6 +10,7 @@ import * as ga from '../lib/ga'
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { route } from 'next/dist/server/router';
+import CookieConsent from "react-cookie-consent";
 
 
 
@@ -55,6 +56,10 @@ export default function MyApp({ Component, pageProps}) {
       <Component {...pageProps}/>
     </div>
     <Script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61f968fb53610790"></Script>
+    <CookieConsent
+      location="top"
+      buttonText="Sure!"
+    >This website uses cookies to enhance the user experience. <a href="/cookies">Find out more</a></CookieConsent>
     <Footer />
   </div>
   )
