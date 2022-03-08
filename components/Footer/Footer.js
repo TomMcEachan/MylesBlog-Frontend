@@ -38,11 +38,6 @@ export default function Footer() {
                                 <p>Cookies Statement</p>
                             </Link> 
                         </li>
-                        <li>
-                            <Link href="/accessibility" target="_blank" rel="noreferrer" passHref>
-                                <p>Accessibility Statement</p>
-                            </Link> 
-                        </li>
                     </ul>     
                 </div>
             </footer>
