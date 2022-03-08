@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { route } from 'next/dist/server/router';
 import CookieConsent from "react-cookie-consent";
-import Link from "next/Link";
+import Link from 'next/link';
 
 
 
