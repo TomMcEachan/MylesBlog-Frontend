@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.mylesmceachan.co.uk
+
+# Sitemaps
+Sitemap: https://www.mylesmceachan.co.uk/sitemap.xml
