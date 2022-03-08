@@ -59,7 +59,7 @@ export default function MyApp({ Component, pageProps}) {
     <CookieConsent
       location="top"
       buttonText="Sure!"
-    >This website uses cookies to enhance the user experience. <Link href="/cookies">Find out more</Link></CookieConsent>
+    >This website uses cookies to enhance the user experience. <Link href="/cookies" passHref>Find out more</Link></CookieConsent>
     <Footer />
   </div>
   )
