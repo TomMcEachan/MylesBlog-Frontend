@@ -25,6 +25,25 @@ export default function Footer() {
                 <div className="copyright">
                     <p>© 2022 MYLES MCEACHAN</p>
                 </div>
+                <div className="footerLinks">
+                    <ul>
+                        <li>
+                            <a href="https://www.mylesmceachan.co.uk/sitemap-0.xml" target="_blank" rel="noreferrer">
+                                <p>Sitemap</p>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="/cookies" target="_blank" rel="noreferrer">
+                                <p>Cookies Statement</p>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="/accessibility" target="_blank" rel="noreferrer">
+                                <p>Accessibility Statement</p>
+                            </a> 
+                        </li>
+                    </ul>     
+                </div>
             </footer>
         </>
     )
